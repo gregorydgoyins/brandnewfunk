@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elevate Frame Group — Story. Air. Training.</title>
+  <meta name="description" content="Elevate Frame Group is a premium visual, aerial, and training group. Three connected divisions — Studios, Air, Academy — under one disciplined brand." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<style>
+/* CRITICAL OVERRIDES */
+.hero .reveal, .hero-page .reveal { opacity:1 !important; transform:none !important; }
+.hero-content, .hero > .container, .hero-page > .container { position:relative !important; z-index:10 !important; }
+.hero-video, .bp-hero-video, .pitch-hero-video { position:absolute !important; inset:0 !important; width:100% !important; height:100% !important; object-fit:cover !important; z-index:0 !important; filter:brightness(.45) saturate(.7) !important; pointer-events:none !important; }
+.hero-bg, .hero::before, .hero-page::before { position:absolute !important; inset:0 !important; z-index:1 !important; pointer-events:none !important; }
+</style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand" aria-label="Elevate Frame Group Home">
+        <svg class="nav-monogram" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Gold ring -->
+          <circle cx="19" cy="19" r="17.5" stroke="#c9a84c" stroke-width="0.75" />
+          <!-- Shutter blades -->
+          <circle cx="19" cy="19" r="5.5" stroke="#c9a84c" stroke-width="0.75" />
+          <line x1="19" y1="5" x2="19" y2="13.5" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="19" y1="24.5" x2="19" y2="33" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="5" y1="19" x2="13.5" y2="19" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="24.5" y1="19" x2="33" y2="19" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="9.2" y1="9.2" x2="15.2" y2="15.2" stroke="#c9a84c" stroke-width="0.4" />
+          <line x1="22.8" y1="22.8" x2="28.8" y2="28.8" stroke="#c9a84c" stroke-width="0.4" />
+          <line x1="28.8" y1="9.2" x2="22.8" y2="15.2" stroke="#c9a84c" stroke-width="0.4" />
+          <line x1="15.2" y1="22.8" x2="9.2" y2="28.8" stroke="#c9a84c" stroke-width="0.4" />
+          <!-- EF monogram -->
+          <text x="12" y="22" font-family="Cormorant Garamond, serif" font-size="9" font-weight="400" fill="#c9a84c" letter-spacing="0.5">EF</text>
+        </svg>
+        <div class="nav-wordmark">
+          <span class="nav-wordmark-main">Elevate Frame</span>
+          <span class="nav-wordmark-sub">Group</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="studios.html">Studios</a>
+        <a href="air.html">Air</a>
+        <a href="academy.html">Academy</a>
+        <a href="work.html">Work</a>
+        <a href="business-plan.html">Plan</a>
+        <a href="pitch.html">Pitch</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-primary btn-sm">Book a Consultation</a>
+        <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="nav-mobile" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="studios.html">Studios</a>
+    <a href="air.html">Air</a>
+    <a href="academy.html">Academy</a>
+    <a href="work.html">Work</a>
+    <a href="business-plan.html">Business Plan</a>
+    <a href="pitch.html">Pitch Package</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top:8px;">Book a Consultation</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <!-- Full-bleed video background — replaced by EFG footage when available -->
+    <video class="hero-video" src="videos/aerial.mp4" autoplay muted loop playsinline preload="auto"></video>
+    <div class="hero-bg">
+      <div class="hero-bg-gradient"></div><div class="hero-bg-fallback"></div>
+      <div class="hero-bg-grid"></div>
+    </div>
+    <div class="hero-content container">
+      <div class="hero-inner">
+        <div class="hero-eyebrow reveal">
+          <span class="hero-eyebrow-line"></span>
+          <span class="eyebrow">Story &nbsp;·&nbsp; Air &nbsp;·&nbsp; Training</span>
+        </div>
+        <h1 class="display-xl hero-headline reveal reveal-delay-1">
+          A premium visual, aerial,<br />
+          and training group built<br />
+          <em>under one roof.</em>
+        </h1>
+        <p class="body-lg hero-sub reveal reveal-delay-2">
+          Elevate Frame Group brings together cinematic production, aerial intelligence, and pilot development into one disciplined brand system — so clients, partners, and operators can move from vision to execution with clarity.
+        </p>
+        <div class="hero-actions reveal reveal-delay-3">
+          <a href="contact.html" class="btn btn-primary">Start a Project</a>
+          <a href="#divisions" class="btn btn-outline">Explore the Divisions</a>
+        </div>
+        <div class="hero-division-links reveal reveal-delay-4">
+          <a href="studios.html" class="hero-division-link">
+            <span class="hdl-name">Studios</span>
+            <span class="hdl-desc">Story-driven production</span>
+          </a>
+          <a href="air.html" class="hero-division-link">
+            <span class="hdl-name">Air</span>
+            <span class="hdl-desc">Aerial intelligence &amp; flight operations</span>
+          </a>
+          <a href="academy.html" class="hero-division-link">
+            <span class="hdl-name">Academy</span>
+            <span class="hdl-desc">Training, standards &amp; pilot development</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO BAND -->
+  <div class="intro-band section-sm">
+    <div class="container">
+      <div class="intro-band-inner">
+        <div class="intro-stat">
+          <span class="intro-stat-number" data-counter="3" data-suffix="">3</span>
+          <span class="intro-stat-label">Integrated Divisions</span>
+        </div>
+        <div class="intro-stat">
+          <span class="intro-stat-number" data-counter="107" data-suffix="">107</span>
+          <span class="intro-stat-label">FAA Part 107 Operations</span>
+        </div>
+        <div class="intro-stat">
+          <span class="intro-stat-number" data-counter="1" data-suffix="">1</span>
+          <span class="intro-stat-label">Canonical Brand System</span>
+        </div>
+        <div class="intro-stat">
+          <span class="intro-stat-number" data-counter="5" data-suffix=" yr">5 yr</span>
+          <span class="intro-stat-label">Growth Roadmap</span>
+        </div>
+        <div class="intro-stat">
+          <p class="body-sm" style="max-width:240px;text-align:center;color:var(--grey);">Florida-based · Disabled &amp; minority veteran-owned · Premium story-first agency</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DIVISION CARDS -->
+  <section class="section section-dark" id="divisions">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="gold-line"></div>
+        <p class="eyebrow mb-6">Three Operating Divisions</p>
+        <h2 class="display-lg" style="max-width:580px;">One group. Three operating disciplines. One clear path forward.</h2>
+      </div>
+      <div class="division-cards reveal">
+        <a href="studios.html" class="division-card">
+          <span class="card-index">01 / 03</span>
+          <span class="card-label">Studios</span>
+          <h3 class="card-headline">Story-first production built to move people.</h3>
+          <p class="card-body">From brand films and founder stories to documentaries, launch campaigns, and editorial execution, Studios is where vision becomes narrative — built for clients who need premium visual language and disciplined execution.</p>
+          <div class="card-tags">
+            <span class="card-tag">Brand Films</span>
+            <span class="card-tag">Campaigns</span>
+            <span class="card-tag">Documentary</span>
+            <span class="card-tag">Post</span>
+          </div>
+          <span class="card-cta">Enter Studios <span class="card-cta-arrow">→</span></span>
+        </a>
+        <a href="air.html" class="division-card">
+          <span class="card-index">02 / 03</span>
+          <span class="card-label">Air</span>
+          <h3 class="card-headline">Aerial capability for cinema, intelligence, and field visibility.</h3>
+          <p class="card-body">Air combines premium drone cinematography with practical aerial operations for site progress, inspection support, mapping pathways, and technical visibility — built to serve both visual storytelling and enterprise-grade operational needs.</p>
+          <div class="card-tags">
+            <span class="card-tag">Cinematography</span>
+            <span class="card-tag">RTK Pathways</span>
+            <span class="card-tag">Thermal</span>
+            <span class="card-tag">Mission Planning</span>
+          </div>
+          <span class="card-cta">Explore Air <span class="card-cta-arrow">→</span></span>
+        </a>
+        <a href="academy.html" class="division-card">
+          <span class="card-index">03 / 03</span>
+          <span class="card-label">Academy</span>
+          <h3 class="card-headline">Training that builds pilots, standards, and repeatable systems.</h3>
+          <p class="card-body">Academy turns real-world workflow, flight discipline, and production standards into structured learning — from pilot development and SOP support to workshops and operational readiness, built with intention not guesswork.</p>
+          <div class="card-tags">
+            <span class="card-tag">Pilot Development</span>
+            <span class="card-tag">SOPs</span>
+            <span class="card-tag">Workshops</span>
+            <span class="card-tag">Readiness</span>
+          </div>
+          <span class="card-cta">Visit Academy <span class="card-cta-arrow">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- BRAND IDENTITY — Business Card -->
+  <section class="section section-mid">
+    <div class="container">
+      <div class="brand-card-section">
+        <div>
+          <div class="gold-line"></div>
+          <p class="eyebrow mb-6">Brand Identity</p>
+          <h2 class="display-md mb-8">Premium from the first impression.</h2>
+          <p class="body-lg mb-6">Die-cut matte black. Metallic gold leaf edges. 700gsm thick stock with tactile texture. Three-layer construction: precision EF monogram on top, gold leaf middle, black base with gold foil edges. The business card is the brand in miniature — disciplined, premium, and impossible to mistake for anything ordinary.</p>
+          <p class="body-md">Every EFG touchpoint carries this standard — from the first card exchanged to the final deliverable.</p>
+        </div>
+        <div>
+          <img src="images/business-card.jpg"
+               
+               data-efg-card="true"
+               class="brand-card-img"
+               alt="Elevate Frame Group — Premium Business Card">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARKETS — VIDEO REEL GRID -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="gold-line"></div>
+        <p class="eyebrow mb-6">Our Markets</p>
+        <h2 class="display-md">From South Florida to wherever the work demands.</h2>
+      </div>
+      <div class="video-grid-3">
+        <div class="reel-card">
+        <video src="videos/aerial.mp4" muted loop playsinline preload="auto"></video>
+        <div class="reel-play"><button class="reel-play-btn" aria-label="Play South Florida Aerial"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button></div>
+        <div class="reel-card-overlay">
+          <span class="reel-label">South Florida Aerial</span>
+          <span class="reel-sublabel">Coastal · Residential · Commercial</span>
+        </div>
+      </div>
+        <div class="reel-card">
+        <video src="videos/aerial.mp4" muted loop playsinline preload="auto"></video>
+        <div class="reel-play"><button class="reel-play-btn" aria-label="Play Site Documentation"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button></div>
+        <div class="reel-card-overlay">
+          <span class="reel-label">Site Documentation</span>
+          <span class="reel-sublabel">Construction · Infrastructure · Progress</span>
+        </div>
+      </div>
+        <div class="reel-card">
+        <video src="videos/drone.mp4" muted loop playsinline preload="auto"></video>
+        <div class="reel-play"><button class="reel-play-btn" aria-label="Play Agricultural Monitoring"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button></div>
+        <div class="reel-card-overlay">
+          <span class="reel-label">Agricultural Monitoring</span>
+          <span class="reel-sublabel">Crop Health · Land Use · Irrigation</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER -->
+  <section class="section">
+    <div class="container">
+      <div class="founder-block reveal">
+        <div class="founder-img-wrap">
+          <img src="images/business-card.jpg" onerror="this.src='images/founder-gregory-goyins.svg'"
+               alt="Gregory D. Goyins — CEO & Founder, Elevate Frame Group"
+               style="width:100%;border-radius:2px;filter:brightness(0.9) grayscale(15%);box-shadow:0 40px 80px rgba(0,0,0,0.6)">
+        </div>
+        <div>
+          <div class="gold-line"></div>
+          <p class="eyebrow mb-6">Founder</p>
+          <h2 class="display-md mb-8">Gregory D. Goyins</h2>
+          <p class="body-lg mb-6">Disabled minority veteran. Military service. Aviation training under Embry-Riddle Aeronautical University mentorship. Story work connected to the rehabilitation of Jayson Williams — later featured on <em style="color:var(--white-soft)">60 Minutes Sports.</em></p>
+          <p class="body-md mb-6">EFG is not a company Gregory is starting. It is a company he has been building — in the field, in post, in the air, and in the hardest storytelling environments possible — for years.</p>
+          <div class="quote-block">
+            <blockquote>"Imagery without story is noise. Technical imagery without interpretation is dead weight. Elevate Frame Group exists to close that gap — permanently."</blockquote>
+            <cite>Gregory D. Goyins · CEO &amp; Founder</cite>
+          </div>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:2rem">Start the Conversation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO REEL SECTION -->
+  <section class="section section-mid">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="gold-line"></div>
+        <p class="eyebrow mb-6">What We Do</p>
+        <h2 class="display-md">Three disciplines. One standard.</h2>
+        <p class="body-md" style="max-width:600px;margin-top:.75rem">Every frame is deliberate. Every flight is planned. Every training session builds toward something real. Click any reel to watch.</p>
+      </div>
+      <div class="video-grid-3">
+        <div class="video-player">
+        <video src="videos/studio.mp4" preload="metadata" playsinline></video>
+        <div class="play-overlay">
+          <button class="play-btn" aria-label="Play Studios — Brand &amp; Narrative Production"><svg viewBox="0 0 24 24" width="28" height="28"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button>
+        </div>
+        <div class="video-label">Studios — Brand &amp; Narrative Production</div>
+      </div>
+        <div class="video-player">
+        <video src="videos/drone.mp4" preload="metadata" playsinline></video>
+        <div class="play-overlay">
+          <button class="play-btn" aria-label="Play Air — Aerial Cinematography &amp; Operations"><svg viewBox="0 0 24 24" width="28" height="28"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button>
+        </div>
+        <div class="video-label">Air — Aerial Cinematography &amp; Operations</div>
+      </div>
+        <div class="video-player">
+        <video src="videos/studio.mp4" preload="metadata" playsinline></video>
+        <div class="play-overlay">
+          <button class="play-btn" aria-label="Play Academy — Pilot Development &amp; Standards"><svg viewBox="0 0 24 24" width="28" height="28"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button>
+        </div>
+        <div class="video-label">Academy — Pilot Development &amp; Standards</div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY EFG -->
+  <section class="section why-efg">
+    <div class="container">
+      <div class="why-efg-grid">
+        <div class="reveal">
+          <div class="gold-line"></div>
+          <p class="eyebrow mb-6">Why EFG</p>
+          <h2 class="display-md mb-8">Why EFG works under one roof.</h2>
+          <p class="body-lg" style="margin-bottom:32px;">Most firms separate creative, aerial execution, and training into disconnected services. Elevate Frame Group is structured differently. Each division strengthens the others: Studios sharpens storytelling, Air extends technical reach, and Academy builds disciplined capability that supports long-term quality.</p>
+          <a href="contact.html" class="btn btn-ghost">Start the Conversation</a>
+        </div>
+        <div class="why-efg-values reveal reveal-delay-2">
+          <div class="value-block">
+            <span class="value-block-title">Integrated Capability</span>
+            <p class="value-block-body">One parent brand. Three operating lanes. A cleaner path from inquiry to execution.</p>
+          </div>
+          <div class="value-block">
+            <span class="value-block-title">Cross-Functional Trust</span>
+            <p class="value-block-body">Clients begin with one service and expand into others without changing partners.</p>
+          </div>
+          <div class="value-block">
+            <span class="value-block-title">Premium Positioning</span>
+            <p class="value-block-body">Creative language, technical credibility, and instructional authority in one ecosystem.</p>
+          </div>
+          <div class="value-block">
+            <span class="value-block-title">Scalable Structure</span>
+            <p class="value-block-body">Built to support current services while leaving room for enterprise and educational growth.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK PREVIEW -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;">
+        <div>
+          <div class="gold-line"></div>
+          <p class="eyebrow mb-6">Selected Work</p>
+          <h2 class="display-md">A preview of what the group delivers.</h2>
+        </div>
+        <a href="work.html" class="btn btn-outline">View All Work</a>
+      </div>
+      <div class="work-grid reveal">
+        <div class="work-tile">
+          <span class="work-tile-division">Studios</span>
+          <h3 class="work-tile-title">Founder Story — Premium Brand Narrative</h3>
+          <p class="work-tile-body">A story-led production designed to clarify identity, elevate trust, and create a stronger emotional connection between founder and audience.</p>
+        </div>
+        <div class="work-tile">
+          <span class="work-tile-division">Air</span>
+          <h3 class="work-tile-title">Aerial Cinema Sequence</h3>
+          <p class="work-tile-body">Premium drone movement designed to expand visual scale, spatial clarity, and cinematic impact across a flagship brand campaign.</p>
+        </div>
+        <div class="work-tile">
+          <span class="work-tile-division">Academy</span>
+          <h3 class="work-tile-title">Pilot Development Workshop</h3>
+          <p class="work-tile-body">A focused training session built around control, judgment, repetition, and practical operating habits for a regional team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITY STRIP -->
+  <div class="capability-strip section-sm">
+    <div class="container">
+      <div class="capability-strip-inner reveal">
+        <div class="cap-item">
+          <div class="cap-item-icon">◈</div>
+          <span class="cap-item-title">Premium Production Workflows</span>
+          <p class="cap-item-body">Reliable capture, controlled movement, clean audio, and editorial flexibility built for premium environments.</p>
+        </div>
+        <div class="cap-item">
+          <div class="cap-item-icon">◎</div>
+          <span class="cap-item-title">FAA-Aware Flight Operations</span>
+          <p class="cap-item-body">Part 107 compliant operations with mission planning, risk discipline, and compliance-ready documentation.</p>
+        </div>
+        <div class="cap-item">
+          <div class="cap-item-icon">▣</div>
+          <span class="cap-item-title">Training &amp; SOP Development</span>
+          <p class="cap-item-body">Standards-based development of training pathways, checklists, and repeatable operating procedures.</p>
+        </div>
+        <div class="cap-item">
+          <div class="cap-item-icon">◇</div>
+          <span class="cap-item-title">Cross-Division Project Delivery</span>
+          <p class="cap-item-body">Projects that benefit from more than one division are handled under one client relationship, not across multiple firms.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="gold-line gold-line-center reveal"></div>
+      <p class="eyebrow mb-6 reveal">Get Started</p>
+      <h2 class="display-md reveal reveal-delay-1">Start in the right division.<br />Build from there.</h2>
+      <p class="body-md reveal reveal-delay-2">Whether you need a film, an aerial operation, or a training pathway, Elevate Frame Group gives you one front door and a clear route to the right team.</p>
+      <div class="cta-actions reveal reveal-delay-3">
+        <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
+        <a href="work.html" class="btn btn-outline">View Work</a>
+      </div>
+      <div class="cta-division-row reveal reveal-delay-4">
+        <a href="contact.html?division=studios" class="cta-division-link">Talk to Studios</a>
+        <a href="contact.html?division=air" class="cta-division-link">Talk to Air</a>
+        <a href="contact.html?division=academy" class="cta-division-link">Talk to Academy</a>
+        <a href="contact.html" class="cta-division-link">Not sure yet</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand" style="gap:12px;">
+            <svg width="32" height="32" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="19" cy="19" r="17.5" stroke="#c9a84c" stroke-width="0.75" />
+              <circle cx="19" cy="19" r="5.5" stroke="#c9a84c" stroke-width="0.75" />
+              <line x1="19" y1="5" x2="19" y2="13.5" stroke="#c9a84c" stroke-width="0.5" />
+              <line x1="19" y1="24.5" x2="19" y2="33" stroke="#c9a84c" stroke-width="0.5" />
+              <line x1="5" y1="19" x2="13.5" y2="19" stroke="#c9a84c" stroke-width="0.5" />
+              <line x1="24.5" y1="19" x2="33" y2="19" stroke="#c9a84c" stroke-width="0.5" />
+              <text x="12" y="22" font-family="serif" font-size="9" font-weight="400" fill="#c9a84c" letter-spacing="0.5">EF</text>
+            </svg>
+            <div class="nav-wordmark">
+              <span class="nav-wordmark-main">Elevate Frame</span>
+              <span class="nav-wordmark-sub">Group</span>
+            </div>
+          </a>
+          <p class="footer-brand-statement">A premium visual, aerial, and training group built to connect story, flight, and disciplined growth under one roof.</p>
+          <a href="contact.html" class="btn btn-primary btn-sm" style="align-self:flex-start;">Book a Consultation</a>
+        </div>
+        <div>
+          <p class="footer-col-title">Divisions</p>
+          <ul class="footer-links">
+            <li><a href="studios.html">Studios</a></li>
+            <li><a href="air.html">Air</a></li>
+            <li><a href="academy.html">Academy</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Company</p>
+          <ul class="footer-links">
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Contact</p>
+          <ul class="footer-links" style="gap:8px;">
+            <li><a href="/cdn-cgi/l/email-protection#264e434a4a4966434a43504752434054474b4341544953560845494b"><span class="__cf_email__" data-cfemail="8fe7eae3e3e0cfeae3eaf9eefbeae9fdeee2eae8fde0faffa1ece0e2">[email&#160;protected]</span></a></li>
+            <li><span style="color:var(--grey);font-size:.85rem;">Boynton Beach, Florida</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Elevate Frame Group. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academy — Elevate Frame Group</title>
+  <meta name="description" content="Pilot development, SOP support, workshops, and training systems built with discipline. Elevate Frame Group Academy helps individuals and teams train with intent." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<style>
+/* CRITICAL OVERRIDES */
+.hero .reveal, .hero-page .reveal { opacity:1 !important; transform:none !important; }
+.hero-content, .hero > .container, .hero-page > .container { position:relative !important; z-index:10 !important; }
+.hero-video, .bp-hero-video, .pitch-hero-video { position:absolute !important; inset:0 !important; width:100% !important; height:100% !important; object-fit:cover !important; z-index:0 !important; filter:brightness(.45) saturate(.7) !important; pointer-events:none !important; }
+.hero-bg, .hero::before, .hero-page::before { position:absolute !important; inset:0 !important; z-index:1 !important; pointer-events:none !important; }
+</style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand" aria-label="Elevate Frame Group Home">
+        <svg class="nav-monogram" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="19" cy="19" r="17.5" stroke="#c9a84c" stroke-width="0.75" />
+          <circle cx="19" cy="19" r="5.5" stroke="#c9a84c" stroke-width="0.75" />
+          <line x1="19" y1="5" x2="19" y2="13.5" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="19" y1="24.5" x2="19" y2="33" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="5" y1="19" x2="13.5" y2="19" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="24.5" y1="19" x2="33" y2="19" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="9.2" y1="9.2" x2="15.2" y2="15.2" stroke="#c9a84c" stroke-width="0.4" />
+          <line x1="22.8" y1="22.8" x2="28.8" y2="28.8" stroke="#c9a84c" stroke-width="0.4" />
+          <line x1="28.8" y1="9.2" x2="22.8" y2="15.2" stroke="#c9a84c" stroke-width="0.4" />
+          <line x1="15.2" y1="22.8" x2="9.2" y2="28.8" stroke="#c9a84c" stroke-width="0.4" />
+          <text x="12" y="22" font-family="Cormorant Garamond, serif" font-size="9" font-weight="400" fill="#c9a84c" letter-spacing="0.5">EF</text>
+        </svg>
+        <div class="nav-wordmark">
+          <span class="nav-wordmark-main">Elevate Frame</span>
+          <span class="nav-wordmark-sub">Group</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="studios.html">Studios</a>
+        <a href="air.html">Air</a>
+        <a href="academy.html" class="active">Academy</a>
+        <a href="work.html">Work</a>
+        <a href="business-plan.html">Plan</a>
+        <a href="pitch.html">Pitch</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="contact.html?division=academy" class="btn btn-primary btn-sm">Ask About Training</a>
+        <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="studios.html">Studios</a>
+    <a href="air.html">Air</a>
+    <a href="academy.html">Academy</a>
+    <a href="work.html">Work</a>
+    <a href="business-plan.html">Business Plan</a>
+    <a href="pitch.html">Pitch Package</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html?division=academy" class="btn btn-primary" style="margin-top:8px;">Ask About Training</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero-page section-rich">
+    <video class="hero-video" src="videos/studio.mp4" autoplay muted loop playsinline preload="auto"></video>
+    <div class="hero-bg">
+      <div class="hero-bg-gradient"></div><div class="hero-bg-fallback"></div>
+      <div class="hero-bg-grid"></div>
+    </div>
+    <div class="container" style="position:relative;z-index:3;width:100%;">
+      <p class="eyebrow mb-6 reveal">Academy Division</p>
+      <h1 class="display-xl reveal reveal-delay-1">Training that builds<br />pilots, standards,<br /><em style="color:var(--gold);font-style:italic;">and repeatable systems.</em></h1>
+      <p class="body-lg mt-8 reveal reveal-delay-2" style="max-width:580px;">Field experience, flight discipline, and production-aware workflows turned into structured learning — built for people who want to train with intention, not guesswork.</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:40px;" class="reveal reveal-delay-3">
+        <a href="contact.html?division=academy" class="btn btn-primary">Ask About Training</a>
+        <a href="#programs" class="btn btn-outline">Explore Programs</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ACADEMY VIDEO GRID -->
+  <section class="section-sm section-dark">
+    <div class="container">
+      <div class="video-grid-3">
+        <div class="reel-card">
+          <video src="videos/studio.mp4" muted loop playsinline preload="auto"></video>
+          <div class="reel-play"><button class="reel-play-btn" aria-label="Play"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button></div>
+          <div class="reel-card-overlay">
+            <span class="reel-label">Ground School &amp; Instruction</span>
+            <span class="reel-sublabel">FAA Part 107 · Airspace · Safety</span>
+          </div>
+        </div>
+        <div class="reel-card">
+          <video src="videos/studio.mp4" muted loop playsinline preload="auto"></video>
+          <div class="reel-play"><button class="reel-play-btn" aria-label="Play"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button></div>
+          <div class="reel-card-overlay">
+            <span class="reel-label">Cohort Training</span>
+            <span class="reel-sublabel">Workshop · Intensive · Certification</span>
+          </div>
+        </div>
+        <div class="reel-card">
+          <video src="videos/drone.mp4" muted loop playsinline preload="auto"></video>
+          <div class="reel-play"><button class="reel-play-btn" aria-label="Play"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button></div>
+          <div class="reel-card-overlay">
+            <span class="reel-label">Flight Operations</span>
+            <span class="reel-sublabel">Progressive Fleet · Mavic · Inspire · Avata</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ACADEMY DEMO PLAYER -->
+  <section class="section section-mid">
+    <div class="container">
+      <div class="two-col-wide reveal">
+        <div>
+          <div class="video-player">
+          <video src="videos/studio.mp4" preload="metadata" playsinline></video>
+          <div class="play-overlay">
+            <button class="play-btn" aria-label="Play"><svg viewBox="0 0 24 24" width="28" height="28"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button>
+          </div>
+          <div class="video-label">Academy — Training &amp; Standards Reel</div>
+        </div>
+          <p class="video-caption" style="margin-top:.75rem">Replace with your actual Academy reel</p>
+        </div>
+        <div>
+          <p class="eyebrow mb-6">Standards-Driven</p>
+          <h2 class="display-md mb-8">Most drone schools teach checklists. Academy teaches judgment.</h2>
+          <p class="body-md">There is a difference between pilots who know the rules and pilots who understand why the rules exist. Academy is built for the second kind — people who want to operate with clarity, confidence, and the kind of professional discipline that earns trust in the field before the aircraft leaves the ground.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section section-mid">
+    <div class="container">
+      <div class="two-col-wide">
+        <div class="reveal">
+          <div class="gold-line"></div>
+          <p class="eyebrow mb-6">The Division</p>
+          <h2 class="display-md mb-8">Built for progression, not guesswork.</h2>
+          <p class="body-lg mb-6">Academy is the instructional division of Elevate Frame Group. It was created to bridge the gap between owning gear and developing capability. Real training is not about random flight time or collecting equipment without structure — it is about building judgment, repeatable habits, operational awareness, and a progression that actually prepares people for field use.</p>
+          <p class="body-md">That is the philosophy behind Academy. We focus on readiness, standards, workflow discipline, and the kind of practical development that supports both creative and technical growth.</p>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div style="border:1px solid var(--black-border);background:var(--black-rich);">
+            <div style="padding:40px 32px;">
+              <p class="eyebrow mb-8">At a Glance</p>
+              <div style="display:flex;flex-direction:column;gap:16px;">
+                <div style="border-bottom:1px solid var(--black-border);padding-bottom:16px;">
+                  <p class="label mb-4">Workshops from</p>
+                  <p class="body-md text-white">$2,500 per session</p>
+                </div>
+                <div style="border-bottom:1px solid var(--black-border);padding-bottom:16px;">
+                  <p class="label mb-4">Consulting from</p>
+                  <p class="body-md text-white">$2,500 per engagement</p>
+                </div>
+                <div style="border-bottom:1px solid var(--black-border);padding-bottom:16px;">
+                  <p class="label mb-4">Format</p>
+                  <p class="body-md text-white">In-person · Remote · Hybrid</p>
+                </div>
+                <div>
+                  <p class="label mb-4">Training platforms</p>
+                  <p class="body-md text-white">DJI Mini 4 Pro · Mavic 3 Classic · Avata 2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GROWTH LADDER -->
+  <section class="section section-dark" id="programs">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="gold-line"></div>
+        <p class="eyebrow mb-6">The Progression</p>
+        <h2 class="display-md">A disciplined ladder of growth.</h2>
+      </div>
+      <p class="body-lg reveal" style="max-width:660px;margin-bottom:60px;">Academy is built around progression. The point is not to rush people toward the biggest platform possible. The point is to build readiness in sequence — so when the mission demands more, the pilot is prepared for it.</p>
+      <div class="ladder reveal">
+        <div class="ladder-step">
+          <span class="ladder-num">01</span>
+          <h3 class="ladder-title">Foundations</h3>
+          <p class="ladder-body">Orientation, basic control, judgment, environment awareness, and repetition — building the habits that every higher stage depends on.</p>
+        </div>
+        <div class="ladder-step">
+          <span class="ladder-num">02</span>
+          <h3 class="ladder-title">Applied Flight</h3>
+          <p class="ladder-body">Purpose-driven exercises tied to actual outcomes rather than empty stick time — learning to fly with intent, not just movement.</p>
+        </div>
+        <div class="ladder-step">
+          <span class="ladder-num">03</span>
+          <h3 class="ladder-title">Workflow Discipline</h3>
+          <p class="ladder-body">Checklists, communication, setup logic, mission planning, and field habits — the systems that make solo and team operations reliable.</p>
+        </div>
+        <div class="ladder-step">
+          <span class="ladder-num">04</span>
+          <h3 class="ladder-title">Operational Growth</h3>
+          <p class="ladder-body">Training that prepares people for higher-stakes environments, better systems, and more demanding workflows — readiness for what comes next.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="section section-mid">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="gold-line"></div>
+        <p class="eyebrow mb-6">What Academy Offers</p>
+        <h2 class="display-md">Programs built for depth, not volume.</h2>
+      </div>
+      <div class="services-grid reveal">
+        <div class="service-item">
+          <span class="service-item-title">Pilot Development</span>
+          <p class="service-item-body">Structured progressions designed to build confidence, control, and sound operating habits — for aspiring pilots and developing operators who want real growth, not random hours.</p>
+        </div>
+        <div class="service-item">
+          <span class="service-item-title">Workshops</span>
+          <p class="service-item-body">Focused sessions for individuals, teams, or organizations looking to improve skill, readiness, and workflow — structured curriculum, real outcomes, practical emphasis.</p>
+        </div>
+        <div class="service-item">
+          <span class="service-item-title">SOP Support</span>
+          <p class="service-item-body">Guidance for standard operating procedures, checklists, and process development — so operations run with consistency, clarity, and documentation that holds up in the field.</p>
+        </div>
+        <div class="service-item">
+          <span class="service-item-title">Production-Aware Training</span>
+          <p class="service-item-body">Instruction that understands both flight discipline and the realities of working inside real media environments — for creative teams adding aerial capability to their workflow.</p>
+        </div>
+        <div class="service-item">
+          <span class="service-item-title">Operational Readiness</span>
+          <p class="service-item-body">Training aimed at safer, cleaner, more deliberate execution in the field — from pre-flight planning through post-mission debrief and continuous improvement.</p>
+        </div>
+        <div class="service-item">
+          <span class="service-item-title">Consulting</span>
+          <p class="service-item-body">Support for organizations building internal capability, training pathways, or workflow standards — advisory engagement aligned to real operational objectives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY + AUDIENCE -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="two-col">
+        <div class="reveal">
+          <div class="gold-line"></div>
+          <p class="eyebrow mb-6">Philosophy</p>
+          <h2 class="display-md mb-8">Not toy-based hype.<br />Real development.</h2>
+          <p class="body-lg mb-6">Academy is built on the belief that pilot development should reflect seriousness of purpose. That means training with progression in mind, using equipment intentionally, and treating standards as part of the craft — not an afterthought.</p>
+          <p class="body-md mb-8">The result is training that respects the learner, respects the work, and respects the environments where that work happens. No shortcuts. No filler. Just the discipline required to build real capability.</p>
+          <a href="contact.html?division=academy" class="btn btn-ghost">Ask About Training</a>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div style="border:1px solid var(--black-border);background:var(--black-rich);">
+            <div style="padding:40px 32px;">
+              <p class="eyebrow mb-8">Who Academy Serves</p>
+              <div style="display:flex;flex-direction:column;gap:16px;">
+                <div style="border-bottom:1px solid var(--black-border);padding-bottom:14px;display:flex;align-items:flex-start;gap:12px;">
+                  <span style="color:var(--gold);font-size:.7rem;margin-top:3px;">◆</span>
+                  <p class="body-md">Aspiring pilots starting with proper foundations</p>
+                </div>
+                <div style="border-bottom:1px solid var(--black-border);padding-bottom:14px;display:flex;align-items:flex-start;gap:12px;">
+                  <span style="color:var(--gold);font-size:.7rem;margin-top:3px;">◆</span>
+                  <p class="body-md">Developing operators building toward more demanding work</p>
+                </div>
+                <div style="border-bottom:1px solid var(--black-border);padding-bottom:14px;display:flex;align-items:flex-start;gap:12px;">
+                  <span style="color:var(--gold);font-size:.7rem;margin-top:3px;">◆</span>
+                  <p class="body-md">Creative teams adding aerial capability to their workflow</p>
+                </div>
+                <div style="border-bottom:1px solid var(--black-border);padding-bottom:14px;display:flex;align-items:flex-start;gap:12px;">
+                  <span style="color:var(--gold);font-size:.7rem;margin-top:3px;">◆</span>
+                  <p class="body-md">Organizations seeking internal standards and SOP development</p>
+                </div>
+                <div style="display:flex;align-items:flex-start;gap:12px;">
+                  <span style="color:var(--gold);font-size:.7rem;margin-top:3px;">◆</span>
+                  <p class="body-md">Teams that want more discipline than hobby-level instruction provides</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="gold-line gold-line-center reveal"></div>
+      <p class="eyebrow mb-6 reveal">Academy</p>
+      <h2 class="display-md reveal reveal-delay-1">Train with intention.</h2>
+      <p class="body-md reveal reveal-delay-2">If you are building pilot capability, refining standards, or developing a team, Academy provides a clearer and more disciplined path forward.</p>
+      <div class="cta-actions reveal reveal-delay-3">
+        <a href="contact.html?division=academy" class="btn btn-primary">Ask About Training</a>
+        <a href="index.html" class="btn btn-outline">Back to EFG</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand" style="gap:12px;">
+            <svg width="32" height="32" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="19" cy="19" r="17.5" stroke="#c9a84c" stroke-width="0.75"/><circle cx="19" cy="19" r="5.5" stroke="#c9a84c" stroke-width="0.75"/><text x="12" y="22" font-family="serif" font-size="9" fill="#c9a84c" letter-spacing="0.5">EF</text></svg>
+            <div class="nav-wordmark"><span class="nav-wordmark-main">Elevate Frame</span><span class="nav-wordmark-sub">Group</span></div>
+          </a>
+          <p class="footer-brand-statement">A premium visual, aerial, and training group built to connect story, flight, and disciplined growth under one roof.</p>
+          <a href="contact.html?division=academy" class="btn btn-primary btn-sm" style="align-self:flex-start;">Ask About Training</a>
+        </div>
+        <div><p class="footer-col-title">Divisions</p><ul class="footer-links"><li><a href="studios.html">Studios</a></li><li><a href="air.html">Air</a></li><li><a href="academy.html">Academy</a></li></ul></div>
+        <div><p class="footer-col-title">Company</p><ul class="footer-links"><li><a href="work.html">Work</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><p class="footer-col-title">Contact</p><ul class="footer-links" style="gap:8px;"><li><a href="/cdn-cgi/l/email-protection#1e767b7272715e7b727b687f6a7b786c7f737b796c716b6e307d7173"><span class="__cf_email__" data-cfemail="a3cbc6cfcfcce3c6cfc6d5c2d7c6c5d1c2cec6c4d1ccd6d38dc0ccce">[email&#160;protected]</span></a></li><li><span style="color:var(--grey);font-size:.85rem;">Boynton Beach, Florida</span></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Elevate Frame Group. All rights reserved.</p>
+        <div class="foot

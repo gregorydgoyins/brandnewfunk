@@ -1,0 +1,89 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)\\.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/css/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/studio",
+      "destination": "/studios",
+      "permanent": true
+    },
+    {
+      "source": "/media",
+      "destination": "/work",
+      "permanent": true
+    },
+    {
+      "source": "/drone",
+      "destination": "/air",
+      "permanent": true
+    },
+    {
+      "source": "/training",
+      "destination": "/academy",
+      "permanent": true
+    },
+    {
+      "source": "/inquiry",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/plan",
+      "destination": "/business-plan",
+      "permanent": true
+    },
+    {
+      "source": "/investor",
+      "destination": "/pitch",
+      "permanent": true
+    },
+    {
+      "source": "/deck",
+      "destination": "/pitch",
+      "permanent": true
+    }
+  ]
+}

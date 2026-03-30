@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1012" viewBox="0 0 1800 1012">
+  <rect width="1800" height="1012" fill="#1a2535"/>
+  <rect x="0" y="0" width="1800" height="2" fill="#4a7a9c" opacity="0.6"/>
+  <rect x="0" y="1010" width="1800" height="2" fill="#4a7a9c" opacity="0.3"/>
+  <!-- Grid lines -->
+  <line x1="600" y1="0" x2="600" y2="1012" stroke="#4a7a9c" stroke-width="0.5" opacity="0.1"/>
+  <line x1="1200" y1="0" x2="1200" y2="1012" stroke="#4a7a9c" stroke-width="0.5" opacity="0.1"/>
+  <line x1="0" y1="337" x2="1800" y2="337" stroke="#4a7a9c" stroke-width="0.5" opacity="0.1"/>
+  <line x1="0" y1="674" x2="1800" y2="674" stroke="#4a7a9c" stroke-width="0.5" opacity="0.1"/>
+  <!-- Center cross -->
+  <circle cx="900" cy="506" r="126" fill="none" stroke="#4a7a9c" stroke-width="1" opacity="0.3"/>
+  <line x1="900" y1="338" x2="900" y2="674" stroke="#4a7a9c" stroke-width="0.8" opacity="0.4"/>
+  <line x1="732" y1="506" x2="1068" y2="506" stroke="#4a7a9c" stroke-width="0.8" opacity="0.4"/>
+  <!-- Label -->
+  <text x="900" y="759" text-anchor="middle" font-family="monospace" font-size="40" fill="#4a7a9c" opacity="0.7">Aerial Coastline Hero</text>
+  <text x="900" y="815" text-anchor="middle" font-family="monospace" font-size="25" fill="#4a7a9c" opacity="0.4">REPLACE WITH ACTUAL PHOTO</text>
+  <text x="900" y="860" text-anchor="middle" font-family="monospace" font-size="22" fill="#4a7a9c" opacity="0.3">1800×1012 · 16:9</text>
+</svg>

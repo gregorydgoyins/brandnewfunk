@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Elevate Frame Group</title>
+  <meta name="description" content="Start a conversation with Elevate Frame Group. Route your inquiry to Studios, Air, or Academy and connect with the right team for your project or training need." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<style>
+/* CRITICAL OVERRIDES */
+.hero .reveal, .hero-page .reveal { opacity:1 !important; transform:none !important; }
+.hero-content, .hero > .container, .hero-page > .container { position:relative !important; z-index:10 !important; }
+.hero-video, .bp-hero-video, .pitch-hero-video { position:absolute !important; inset:0 !important; width:100% !important; height:100% !important; object-fit:cover !important; z-index:0 !important; filter:brightness(.45) saturate(.7) !important; pointer-events:none !important; }
+.hero-bg, .hero::before, .hero-page::before { position:absolute !important; inset:0 !important; z-index:1 !important; pointer-events:none !important; }
+</style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand" aria-label="Elevate Frame Group Home">
+        <svg class="nav-monogram" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="19" cy="19" r="17.5" stroke="#c9a84c" stroke-width="0.75" />
+          <circle cx="19" cy="19" r="5.5" stroke="#c9a84c" stroke-width="0.75" />
+          <line x1="19" y1="5" x2="19" y2="13.5" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="19" y1="24.5" x2="19" y2="33" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="5" y1="19" x2="13.5" y2="19" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="24.5" y1="19" x2="33" y2="19" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="9.2" y1="9.2" x2="15.2" y2="15.2" stroke="#c9a84c" stroke-width="0.4" />
+          <line x1="22.8" y1="22.8" x2="28.8" y2="28.8" stroke="#c9a84c" stroke-width="0.4" />
+          <line x1="28.8" y1="9.2" x2="22.8" y2="15.2" stroke="#c9a84c" stroke-width="0.4" />
+          <line x1="15.2" y1="22.8" x2="9.2" y2="28.8" stroke="#c9a84c" stroke-width="0.4" />
+          <text x="12" y="22" font-family="Cormorant Garamond, serif" font-size="9" font-weight="400" fill="#c9a84c" letter-spacing="0.5">EF</text>
+        </svg>
+        <div class="nav-wordmark">
+          <span class="nav-wordmark-main">Elevate Frame</span>
+          <span class="nav-wordmark-sub">Group</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="studios.html">Studios</a>
+        <a href="air.html">Air</a>
+        <a href="academy.html">Academy</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#form" class="btn btn-primary btn-sm">Send Inquiry</a>
+        <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="studios.html">Studios</a>
+    <a href="air.html">Air</a>
+    <a href="academy.html">Academy</a>
+    <a href="work.html">Work</a>
+    <a href="business-plan.html">Business Plan</a>
+    <a href="pitch.html">Pitch Package</a>
+    <a href="contact.html">Contact</a>
+    <a href="#form" class="btn btn-primary" style="margin-top:8px;">Send Inquiry</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero-page section-rich">
+    <video class="hero-video" src="videos/aerial.mp4" autoplay muted loop playsinline preload="auto"></video>
+    <div class="hero-bg">
+      <div class="hero-bg-gradient"></div><div class="hero-bg-fallback"></div>
+      <div class="hero-bg-grid"></div>
+    </div>
+    <div class="container" style="position:relative;z-index:3;width:100%;">
+      <p class="eyebrow mb-6 reveal">Contact</p>
+      <h1 class="display-xl reveal reveal-delay-1">Start in the right place.<br /><em style="color:var(--gold);font-style:italic;">We'll route the rest.</em></h1>
+      <p class="body-lg mt-8 reveal reveal-delay-2" style="max-width:560px;">Whether you need a production partner, an aerial capability, or a training pathway, Elevate Frame Group gives you one front door and a clear route to the right division.</p>
+    </div>
+  </section>
+
+  <!-- ROUTING CARDS -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="gold-line"></div>
+        <p class="eyebrow mb-6">Choose the Right Lane</p>
+        <h2 class="display-md">Tell us what you're building.</h2>
+        <p class="body-md mt-8" style="max-width:560px;">Use the form below to reach the parent team or route directly into the division that best fits your need. If you are not sure where the project belongs, start with the larger objective and we will guide the conversation from there.</p>
+      </div>
+
+      <div class="routing-grid reveal" id="routing-cards">
+        <div class="routing-card" data-division="studios" tabindex="0" role="button" aria-pressed="false">
+          <span class="routing-card-label">Division 01</span>
+          <span class="routing-card-title">Studios</span>
+          <p class="routing-card-body">Brand films, founder stories, campaign production, editorial work, and post-production.</p>
+        </div>
+        <div class="routing-card" data-division="air" tabindex="0" role="button" aria-pressed="false">
+          <span class="routing-card-label">Division 02</span>
+          <span class="routing-card-title">Air</span>
+          <p class="routing-card-body">Aerial cinematography, site visibility, mission planning, inspection pathways, and technical flight projects.</p>
+        </div>
+        <div class="routing-card" data-division="academy" tabindex="0" role="button" aria-pressed="false">
+          <span class="routing-card-label">Division 03</span>
+          <span class="routing-card-title">Academy</span>
+          <p class="routing-card-body">Pilot development, workshops, SOP support, consulting, and training-led engagements.</p>
+        </div>
+        <div class="routing-card" data-division="general" tabindex="0" role="button" aria-pressed="false">
+          <span class="routing-card-label">General</span>
+          <span class="routing-card-title">Not Sure Yet</span>
+          <p class="routing-card-body">Projects that cross divisions or need help identifying the best starting point. We'll route you.</p>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div id="form" class="reveal">
+        <div class="two-col-wide">
+          <div>
+            <p class="eyebrow mb-6">Inquiry Form</p>
+            <p class="body-md mb-8">Share a few details about your project, timeline, and division of interest. The more context you provide, the faster we can route the conversation and respond with something useful.</p>
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="name">Name *</label>
+                  <input class="form-input" id="name" name="name" type="text" placeholder="Your full name" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="company">Company / Organization</label>
+                  <input class="form-input" id="company" name="company" type="text" placeholder="Company name" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="email">Email *</label>
+                  <input class="form-input" id="email" name="email" type="email" placeholder="your@email.com" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="phone">Phone</label>
+                  <input class="form-input" id="phone" name="phone" type="tel" placeholder="(XXX) XXX-XXXX" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="division-select">Division of Interest</label>
+                  <select class="form-select" id="division-select" name="division">
+                    <option value="">Select a division</option>
+                    <option value="studios">Studios — Production &amp; narrative</option>
+                    <option value="air">Air — Aerial &amp; flight operations</option>
+                    <option value="academy">Academy — Training &amp; SOPs</option>
+                    <option value="general">General / Not sure yet</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="project-type">Project Type</label>
+                  <select class="form-select" id="project-type" name="project_type">
+                    <option value="">Select type</option>
+                    <option value="brand-film">Brand Film</option>
+                    <option value="campaign">Campaign Production</option>
+                    <option value="documentary">Documentary / Editorial</option>
+                    <option value="aerial-cinema">Aerial Cinematography</option>
+                    <option value="site-visibility">Site Visibility</option>
+                    <option value="inspection">Inspection / RTK</option>
+                    <option value="workshop">Pilot Development Workshop</option>
+                    <option value="sop">SOP / Workflow Consulting</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="timeline">Timeline</label>
+                  <select class="form-select" id="timeline" name="timeline">
+                    <option value="">Select timeline</option>
+                    <option value="asap">ASAP / Urgent</option>
+                    <option value="1month">Within 1 month</option>
+                    <option value="3months">Within 3 months</option>
+                    <option value="6months">Within 6 months</option>
+                    <option value="planning">Still planning</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="budget">Budget Range</label>
+                  <select class="form-select" id="budget" name="budget">
+                    <option value="">Select range</option>
+                    <option value="under5k">Under $5,000</option>
+                    <option value="5k-10k">$5,000 — $10,000</option>
+                    <option value="10k-25k">$10,000 — $25,000</option>
+                    <option value="25k-50k">$25,000 — $50,000</option>
+                    <option value="50k+">$50,000+</option>
+                    <option value="discuss">Let's discuss</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Tell us about the project *</label>
+                <textarea class="form-textarea" id="message" name="message" placeholder="Share your objectives, context, key requirements, and anything else that helps us understand the project…" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">Send Inquiry</button>
+            </form>
+          </div>
+
+          <!-- Right column: direct contact + links -->
+          <div style="display:flex;flex-direction:column;gap:32px;">
+            <div style="border:1px solid var(--black-border);background:var(--black-rich);">
+              <div style="padding:36px 28px;">
+                <p class="eyebrow mb-8">Prefer a Direct Conversation?</p>
+                <p class="body-md mb-8">If your need is time-sensitive or easier to explain live, reach out directly and we'll help route the conversation.</p>
+                <div style="display:flex;flex-direction:column;gap:16px;">
+                  <div style="border-bottom:1px solid var(--black-border);padding-bottom:14px;">
+                    <p class="label mb-4">Email</p>
+                    <a href="/cdn-cgi/l/email-protection#59313c353536193c353c2f382d3c3f2b38343c3e2b362c29773a3634" style="font-size:.88rem;color:var(--gold);"><span class="__cf_email__" data-cfemail="563e333a3a3916333a33203722333024373b3331243923267835393b">[email&#160;protected]</span></a>
+                  </div>
+                  <div style="border-bottom:1px solid var(--black-border);padding-bottom:14px;">
+                    <p class="label mb-4">Location</p>
+                    <p class="body-md">Boynton Beach, Florida</p>
+                  </div>
+                  <div>
+                    <p class="label mb-4">Response time</p>
+                    <p class="body-md">Within one business day</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="border:1px solid var(--black-border);background:var(--black-rich);">
+              <div style="padding:36px 28px;">
+                <p class="eyebrow mb-8">One Group. Clear Entry Points.</p>
+                <div style="display:flex;flex-direction:column;gap:12px;">
+                  <a href="studios.html" style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--black-border);text-decoration:none;">
+                    <span style="font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--white);">Studios</span>
+                    <span style="color:var(--gold);font-size:.8rem;">→</span>
+                  </a>
+                  <a href="air.html" style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--black-border);text-decoration:none;">
+                    <span style="font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--white);">Air</span>
+                    <span style="color:var(--gold);font-size:.8rem;">→</span>
+                  </a>
+                  <a href="academy.html" style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--black-border);text-decoration:none;">
+                    <span style="font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--white);">Academy</span>
+                    <span style="color:var(--gold);font-size:.8rem;">→</span>
+                  </a>
+                  <a href="work.html" style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;text-decoration:none;">
+                    <span style="font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--white);">Work</span>
+                    <span style="color:var(--gold);font-size:.8rem;">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO STRIP -->
+  <div class="section-sm section-mid">
+    <div class="container">
+      <div class="contact-info-grid reveal">
+        <div class="contact-info-item">
+          <span class="contact-info-label">Headquarters</span>
+          <span class="contact-info-value">Boynton Beach, Florida</span>
+        </div>
+        <div class="contact-info-item">
+          <span class="contact-info-label">General Inquiries</span>
+          <a href="/cdn-cgi/l/email-protection#a8c0cdc4c4c7e8cdc4cddec9dccdcedac9c5cdcfdac7ddd886cbc7c5" class="contact-info-value" style="color:var(--gold);"><span class="__cf_email__" data-cfemail="771f121b1b1837121b12011603121105161a1210051802075914181a">[email&#160;protected]</span></a>
+        </div>
+        <div class="contact-info-item">
+          <span class="contact-info-label">Business Classification</span>
+          <span class="contact-info-value">Disabled &amp; minority veteran-owned</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand" style="gap:12px;">
+            <svg width="32" height="32" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="19" cy="19" r="17.5" stroke="#c9a84c" stroke-width="0.75"/><circle cx="19" cy="19" r="5.5" stroke="#c9a84c" stroke-width="0.75"/><text x="12" y="22" font-family="serif" font-size="9" fill="#c9a84c" letter-spacing="0.5">EF</text></svg>
+            <div class="nav-wordmark"><span class="nav-wordmark-main">Elevate Frame</span><span class="nav-wordmark-sub">Group</span></div>
+          </a>
+          <p class="footer-brand-statement">A premium visual, aerial, and training group built to connect story, flight, and disciplined growth under one roof.</p>
+          <a href="#form" class="btn btn-primary btn-sm" style="align-self:flex-start;">Book a Consultation</a>
+        </div>
+        <div><p class="footer-col-title">Divisions</p><ul class="footer-links"><li><a href="studios.html">Studios</a></li><li><a href="air.html">Air</a></li><li><a href="academy.html">Academy</a></li></ul></div>
+        <div><p class="footer-col-title">Company</p><ul class="footer-links"><li><a href="work.html">Work</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><p class="footer-col-title">Contact</p><ul class="footer-links" style="gap:8px;"><li><a href="/cdn-cgi/l/email-protection#d4bcb1b8b8bb94b1b8b1a2b5a0b1b2a6b5b9b1b3a6bba1a4fab7bbb9"><span class="__cf_email__" data-cfemail="b3dbd6dfdfdcf3d6dfd6c5d2c7d6d5c1d2ded6d4c1dcc6c39d

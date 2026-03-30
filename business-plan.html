@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Business Plan — Elevate Frame Group</title>
+  <meta name="description" content="Elevate Frame Group Business Plan 2025–2030. $250K Series Seed. Three-division aerial media enterprise."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+/* BP page specific */
+.bp-hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.2) saturate(.45);z-index:0}
+.bp-stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--black-border)}
+.bp-stat{background:var(--black-card);padding:1.75rem 1.5rem;border-top:2px solid var(--gold)}
+.bp-stat-num{font-family:'Cormorant Garamond',serif;font-size:2.5rem;color:var(--white-soft);line-height:1;margin-bottom:.35rem}
+.bp-stat-label{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--grey)}
+.bp-stat-sub{font-size:.75rem;color:var(--gold);margin-top:.25rem}
+.bp-toc{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--black-border);margin:2rem 0}
+.bp-toc-item{background:var(--black-card);padding:1.5rem;display:flex;align-items:flex-start;gap:1rem;transition:background .2s}
+.bp-toc-item:hover{background:var(--black-rich)}
+.bp-toc-num{font-family:'JetBrains Mono',monospace;font-size:.62rem;color:var(--gold);letter-spacing:.1em;flex-shrink:0;padding-top:.1rem}
+.bp-toc-title{font-size:.82rem;font-weight:600;color:var(--white-soft);margin-bottom:.25rem}
+.bp-toc-desc{font-size:.72rem;color:var(--grey);line-height:1.5}
+.bp-section{padding:4.5rem 0;border-top:1px solid var(--black-border)}
+.bp-section-label{display:flex;align-items:center;gap:1rem;margin-bottom:2.5rem}
+.bp-section-num{font-family:'JetBrains Mono',monospace;font-size:.62rem;color:var(--gold);letter-spacing:.1em;border:1px solid var(--gold-rule);padding:.3rem .75rem;flex-shrink:0}
+.bp-table-wrap{width:100%;overflow-x:auto;border:1px solid var(--black-border);margin:1.25rem 0}
+.bp-table{width:100%;border-collapse:collapse;font-size:.84rem}
+.bp-table thead tr{background:var(--black-mid)}
+.bp-table th{padding:.875rem 1.25rem;text-align:left;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--gold);font-family:'Inter',sans-serif;border-bottom:1px solid var(--gold);white-space:nowrap}
+.bp-table th.r{text-align:right}
+.bp-table td{padding:.875rem 1.25rem;color:var(--white-muted);border-bottom:1px solid var(--black-border);vertical-align:top;line-height:1.6}
+.bp-table td.r{text-align:right} .bp-table td.bold{color:var(--white-soft);font-weight:600}
+.bp-table td.gold{color:var(--gold);font-weight:600} .bp-table td.red{color:#e07070}
+.bp-table td.dim{color:var(--grey);font-size:.78rem}
+.bp-table tr:hover td{background:rgba(255,255,255,.015)}
+.bp-table tr.total td{background:rgba(201,168,76,.07);color:var(--gold);font-weight:700;border-top:1px solid var(--gold-rule)}
+.bp-table tr.total td.r{text-align:right}
+.bp-table tr.section-row td{background:var(--black-mid);color:var(--grey);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;padding-top:1.1rem;font-weight:700}
+.bp-table tr.sub td:first-child{padding-left:2.25rem;color:var(--grey)}
+.chart-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.chart-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.cert-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:1.5rem 0}
+.cert-tile{background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.2);padding:1.5rem;text-align:center}
+.cert-name{font-family:'Cormorant Garamond',serif;font-size:1.7rem;color:var(--gold);margin-bottom:.35rem;display:block}
+.cert-tile p{font-size:.75rem;color:var(--grey);line-height:1.6}
+.tl{position:relative;padding-left:180px}
+.tl::before{content:'';position:absolute;left:148px;top:0;bottom:0;width:1px;background:var(--gold-rule)}
+.tl-item{position:relative;margin-bottom:2.25rem;padding-left:2rem}
+.tl-period{position:absolute;left:-180px;width:140px;text-align:right;font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700;padding-top:.15rem;line-height:1.4}
+.tl-dot{position:absolute;left:-5px;top:.3rem;width:9px;height:9px;background:var(--gold);border-radius:50%;box-shadow:0 0 0 4px rgba(201,168,76,.12)}
+.tl-title{font-size:.9rem;font-weight:700;color:var(--white-soft);margin-bottom:.35rem;font-family:'Inter',sans-serif}
+.tl-body{font-size:.82rem;color:var(--grey);line-height:1.7}
+.did-pitch-layout{display:grid;grid-template-columns:280px 1fr;gap:2rem;align-items:start}
+.did-slide-content{padding:2rem;background:var(--black-card);border:1px solid var(--black-border)}
+.did-slide-title{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--white-soft);margin-bottom:1rem}
+.did-slide-body{font-size:.9rem;color:var(--white-muted);line-height:1.85}
+.did-api-notice{display:none;font-size:.7rem;color:var(--grey);text-align:center;padding:.75rem;border:1px solid var(--black-border);margin-top:.75rem;font-family:'JetBrains Mono',monospace;line-height:1.5}
+@media(max-width:900px){.bp-toc{grid-template-columns:1fr 1fr}.bp-stat-row{grid-template-columns:1fr 1fr}.chart-grid-2,.chart-grid-3{grid-template-columns:1fr}.cert-row{grid-template-columns:1fr 1fr}.tl{padding-left:0}.tl::before{display:none}.tl-period{position:static;text-align:left;width:auto;margin-bottom:.25rem}.tl-item{padding-left:0}.tl-dot{display:none}.did-pitch-layout{grid-template-columns:1fr}}
+@media(max-width:600px){.bp-toc{grid-template-columns:1fr}.bp-stat-row{grid-template-columns:1fr}}
+</style>
+
+<style>
+/* CRITICAL OVERRIDES */
+.hero .reveal, .hero-page .reveal { opacity:1 !important; transform:none !important; }
+.hero-content, .hero > .container, .hero-page > .container { position:relative !important; z-index:10 !important; }
+.hero-video, .bp-hero-video, .pitch-hero-video { position:absolute !important; inset:0 !important; width:100% !important; height:100% !important; object-fit:cover !important; z-index:0 !important; filter:brightness(.45) saturate(.7) !important; pointer-events:none !important; }
+.hero-bg, .hero::before, .hero-page::before { position:absolute !important; inset:0 !important; z-index:1 !important; pointer-events:none !important; }
+</style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand" aria-label="Elevate Frame Group Home">
+        <svg class="nav-monogram" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Gold ring -->
+          <circle cx="19" cy="19" r="17.5" stroke="#c9a84c" stroke-width="0.75" />
+          <!-- Shutter blades -->
+          <circle cx="19" cy="19" r="5.5" stroke="#c9a84c" stroke-width="0.75" />
+          <line x1="19" y1="5" x2="19" y2="13.5" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="19" y1="24.5" x2="19" y2="33" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="5" y1="19" x2="13.5" y2="19" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="24.5" y1="19" x2="33" y2="19" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="9.2" y1="9.2" x2="15.2" y2="15.2" stroke="#c9a84c" stroke-width="0.4" />
+          <line x1="22.8" y1="22.8" x2="28.8" y2="28.8" stroke="#c9a84c" stroke-width="0.4" />
+          <line x1="28.8" y1="9.2" x2="22.8" y2="15.2" stroke="#c9a84c" stroke-width="0.4" />
+          <line x1="15.2" y1="22.8" x2="9.2" y2="28.8" stroke="#c9a84c" stroke-width="0.4" />
+          <!-- EF monogram -->
+          <text x="12" y="22" font-family="Cormorant Garamond, serif" font-size="9" font-weight="400" fill="#c9a84c" letter-spacing="0.5">EF</text>
+        </svg>
+        <div class="nav-wordmark">
+          <span class="nav-wordmark-main">Elevate Frame</span>
+          <span class="nav-wordmark-sub">Group</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="studios.html">Studios</a>
+        <a href="air.html">Air</a>
+        <a href="academy.html">Academy</a>
+        <a href="work.html">Work</a>
+        <a href="business-plan.html" class="active">Plan</a>
+        <a href="pitch.html">Pitch</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-primary btn-sm">Book a Consultation</a>
+        <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="nav-mobile" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="studios.html">Studios</a>
+    <a href="air.html">Air</a>
+    <a href="academy.html">Academy</a>
+    <a href="work.html">Work</a>
+    <a href="business-plan.html">Business Plan</a>
+    <a href="pitch.html">Pitch Package</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top:8px;">Book a Consultation</a>
+  </div>
+
+  <!-- HERO — video background -->
+  <section class="hero-page section-rich" style="padding-bottom:4rem">
+    <video class="bp-hero-video" src="videos/city.mp4" autoplay muted loop playsinline preload="auto"></video>
+    <div class="hero-bg">
+      <div class="hero-bg-gradient"></div><div class="hero-bg-fallback"></div>
+      <div class="hero-bg-grid"></div>
+    </div>
+    <div class="container" style="position:relative;z-index:2;padding-top:3rem">
+      <p class="eyebrow mb-6 reveal">Confidential · Series Seed · 2025–2030</p>
+      <h1 class="display-xl reveal reveal-delay-1">Business Plan<br><em style="color:var(--gold);font-style:italic">Elevate Frame Group.</em></h1>
+      <p class="body-lg mt-8 reveal reveal-delay-2" style="max-width:600px">Three-division aerial media enterprise. $250,000 raise. Five-year financial projections. Equipment manifest. Market research. Veteran &amp; minority procurement strategy. Interactive avatar walkthrough below.</p>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2.5rem" class="reveal reveal-delay-3">
+        <a href="pitch.html" class="btn btn-primary">View Pitch Package →</a>
+        <a href="contact.html" class="btn btn-outline">Request Full Package</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY METRICS -->
+  <div class="bp-stat-row">
+    <div class="bp-stat"><div class="bp-stat-num">$250K</div><div class="bp-stat-label">Raise Sought</div><div class="bp-stat-sub">Series Seed · 18-month runway</div></div>
+    <div class="bp-stat"><div class="bp-stat-num">$316K</div><div class="bp-stat-label">Year 1 Revenue</div><div class="bp-stat-sub">Studios · Air · Academy</div></div>
+    <div class="bp-stat"><div class="bp-stat-num">$1.84M</div><div class="bp-stat-label">Year 5 Projection</div><div class="bp-stat-sub">27.1% net margin</div></div>
+    <div class="bp-stat"><div class="bp-stat-num">Month 4</div><div class="bp-stat-label">Cash Flow Positive</div><div class="bp-stat-sub">EBITDA+ by Month 9</div></div>
+  </div>
+
+  <!-- D-ID AVATAR — Executive Summary Narrator -->
+  <section class="section section-mid">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="gold-line"></div>
+        <p class="eyebrow mb-6">Interactive Walkthrough</p>
+        <h2 class="display-md">Your AI business presenter.<br><em>Click once to begin.</em></h2>
+        <p class="body-md" style="max-width:580px;margin-top:.75rem">Click <strong style="color:var(--white-soft)">Begin Walkthrough</strong> and the AI presenter narrates the executive summary and three-division model. Two slides, fully voiced, auto-advancing.</p>
+      </div>
+
+      <div class="did-pitch-layout" data-did-widget="plan_intro" data-presenter="plan">
+        <div>
+          <div class="did-container">
+            <div class="did-video-wrap">
+              <!-- Presenter image until D-ID generates video -->
+              <img class="did-idle-img"
+                   src="https://create-images-results.d-id.com/DefaultPresenters/Eric_m/image.jpeg"
+                   alt="EFG Business Presenter — Eric"
+                   onerror="this.style.display='none';this.parentElement.querySelector('.did-presenter-fallback').style.display='flex'">
+              <div class="did-presenter-fallback" style="display:none;position:absolute;inset:0;background:linear-gradient(180deg,#1a1a1a 0%,#0d0d0d 100%);flex-direction:column;align-items:center;justify-content:center;gap:1rem">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                  <circle cx="40" cy="40" r="39" stroke="#c9a84c" stroke-width="1"/>
+                  <circle cx="40" cy="32" r="14" stroke="#c9a84c" stroke-width="1" fill="rgba(201,168,76,0.1)"/>
+                  <path d="M14 70c0-14.36 11.64-26 26-26s26 11.64 26 26" stroke="#c9a84c" stroke-width="1" fill="rgba(201,168,76,0.1)"/>
+                  <text x="40" y="36" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="11" fill="#c9a84c" letter-spacing="1">ERIC</text>
+                </svg>
+                <span style="font-family:JetBrains Mono,monospace;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:#c9a84c">EFG Presenter</span>
+              </div>
+              <div class="did-play-overlay" id="plan-play-overlay">
+                <button class="did-big-play-btn" onclick="document.querySelector('[data-did-widget=plan_intro] .did-speak-btn').click();document.getElementById('plan-play-overlay').style.display='none'">
+                  <svg viewBox="0 0 24 24" width="36" height="36"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                </button>
+                <span>Click to begin</span>
+              </div>
+              <video class="did-video" style="display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
+              <div class="did-status">
+                <div class="did-status-dot idle"></div>
+                <span class="did-status-text">Ready</span>
+              </div>
+            </div>
+            <div class="did-controls">
+              <button class="did-speak-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+                Speak This Slide
+              </button>
+              <div class="did-slide-nav"></div>
+              <div class="did-transcript">Your presenter is ready. Click Begin Walkthrough to start the narrated executive summary.</div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="did-slide-content">
+          <div class="did-slide-title">Executive Summary</div>
+          <div class="did-slide-body">
+            <p style="margin-bottom:1.25rem">Elevate Frame Group is a Florida-based, disabled, minority veteran-owned media firm operating at the intersection of narrative production, aerial and terrestrial cinematography, and standards-driven execution.</p>
+            <p style="margin-bottom:1.25rem">What distinguishes Elevate Frame Group is not only the range of environments in which it can operate, but the system behind how it works — shaped by military service, technical and aviation training, cinematic production experience, and Embry-Riddle mentorship.</p>
+            <p>At Elevate Frame Group, all things begin and end with story. Story is the organizing principle that gives the work meaning, sequence, and value — proven in work connected to the rehabilitation of Jayson Williams, later featured on <em>60 Minutes Sports.</em></p>
+            <div class="quote-block" style="margin-top:2rem">
+              <blockquote>"Imagery without story is noise. Technical imagery without interpretation is dead weight."</blockquote>
+              <cite>Gregory D. Goyins · CEO &amp; Founder</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <!-- TOC -->
+    <div class="bp-section" style="padding-top:4rem;border-top:none">
+      <div class="bp-section-label"><span class="bp-section-num">00</span><span class="eyebrow" style="margin-bottom:0">Contents</span></div>
+      <div class="bp-toc">
+        <div class="bp-toc-item"><span class="bp-toc-num">I</span><div><div class="bp-toc-title">Executive Summary</div><div class="bp-toc-desc">Overview · Mission · Problem · Solution · Founder</div></div></div>
+        <div class="bp-toc-item"><span class="bp-toc-num">II</span><div><div class="bp-toc-title">Market Research</div><div class="bp-toc-desc">Industry size · TAM/SAM/SOM · Florida conditions</div></div></div>
+        <div class="bp-toc-item"><span class="bp-toc-num">III</span><div><div class="bp-toc-title">Competitive Landscape</div><div class="bp-toc-desc">Positioning · Gaps · EFG structural advantage</div></div></div>
+        <div class="bp-toc-item"><span class="bp-toc-num">IV</span><div><div class="bp-toc-title">Products &amp; Services</div><div class="bp-toc-desc">Full service catalog · pricing · billing models</div></div></div>
+        <div class="bp-toc-item"><span class="bp-toc-num">V</span><div><div class="bp-toc-title">Equipment</div><div class="bp-toc-desc">New · Refurbished · Year 2 deferred items</div></div></div>
+        <div class="bp-toc-item"><span class="bp-toc-num">VI–IX</span><div><div class="bp-toc-title">Financials · Funding · Veteran Strategy · Roadmap</div><div class="bp-toc-desc">P&amp;L · Cash flow · $250K ask · SDVOSB · Timeline</div></div></div>
+      </div>
+    </div>
+
+    <!-- II. MARKET — with interactive charts -->
+    <div class="bp-section" id="market">
+      <div class="bp-section-label"><span class="bp-section-num">II</span><span class="eyebrow" style="margin-bottom:0">Market Research &amp; Industry Analysis</span></div>
+
+      <div class="metric-row reveal">
+        <div class="metric"><div class="metric-num" data-counter="43" data-suffix="B">$43B</div><div class="metric-label">U.S. Video Production</div><div class="metric-sub">+4.1% CAGR → $55B by 2030</div></div>
+        <div class="metric"><div class="metric-num" data-counter="7" data-suffix=".8B">$7.8B</div><div class="metric-label">Commercial Drones</div><div class="metric-sub">+16.4% CAGR → $21.7B by 2030</div></div>
+        <div class="metric"><div class="metric-num" data-counter="14" data-suffix=".2B">$14.2B</div><div class="metric-label">FL Active Construction</div><div class="metric-sub">Core Air market — immediate</div></div>
+        <div class="metric"><div class="metric-num" data-counter="91" data-suffix="%">91%</div><div class="metric-label">Businesses Use Video</div><div class="metric-sub">82% report positive ROI</div></div>
+      </div>
+
+      <div class="chart-grid-2" style="margin:2rem 0">
+        <div class="chart-card">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem">
+            <div class="chart-title" style="margin-bottom:0">5-Year Revenue by Division ($000s)</div>
+            <div class="chart-tabs" data-chart="revenue">
+              <button class="chart-tab active" data-view="grouped">By Division</button>
+              <button class="chart-tab" data-view="stacked">Stacked</button>
+            </div>
+          </div>
+          <canvas id="revChart" height="200"></canvas>
+        </div>
+        <div class="chart-card">
+          <div class="chart-title">EBITDA Progression ($000s)</div>
+          <canvas id="ebitdaChart" height="200"></canvas>
+        </div>
+      </div>
+
+      <div class="chart-grid-2" style="margin:1.5rem 0">
+        <div class="chart-card">
+          <div class="chart-title">TAM · SAM · SOM</div>
+          <div class="bar-list" style="margin-top:.5rem">
+            <div class="bar-item"><div class="bar-meta"><span>Total Addressable Market (U.S.)</span><strong>$21.4B</strong></div><div class="bar-track"><div class="bar-fill" data-w="100"></div></div></div>
+            <div class="bar-item"><div class="bar-meta"><span>Serviceable Market (FL + Adjacent)</span><strong>$1.13B</strong></div><div class="bar-track"><div class="bar-fill" data-w="68" style="background:linear-gradient(90deg,#5a4a2a,#c9a84c)"></div></div></div>
+            <div class="bar-item"><div class="bar-meta"><span>Studios SOM — Year 1 → Year 5</span><strong>$190K–$920K</strong></div><div class="bar-track"><div class="bar-fill" data-w="18" style="background:#b08d57"></div></div></div>
+            <div class="bar-item"><div class="bar-meta"><span>Air SOM — Year 1 → Year 5</span><strong>$64K–$552K</strong></div><div class="bar-track"><div class="bar-fill" data-w="12" style="background:#7ba7bc"></div></div></div>
+            <div class="bar-item"><div class="bar-meta"><span>Academy SOM — Year 1 → Year 5</span><strong>$62K–$368K</strong></div><div class="bar-track"><div class="bar-fill" data-w="9" style="background:#8b7355"></div></div></div>
+          </div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-title">Gross Margin by Division</div>
+          <canvas id="marginChart" height="200"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- IV. SERVICES -->
+    <div class="bp-section" id="services">
+      <div class="bp-section-label"><span class="bp-section-num">IV</span><span class="eyebrow" style="margin-bottom:0">Products &amp; Services</span></div>
+      <div style="display:flex;flex-direction:column;gap:2.5rem">
+        <div>
+          <p style="font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1rem;font-family:'JetBrains Mono',monospace">Studios Division</p>
+          <div class="bp-table-wrap"><table class="bp-table"><thead><tr><th>Service</th><th>Description</th><th class="r">Price Range</th><th>Billing</th></tr></thead><tbody>
+            <tr><td class="bold">Brand / Founder Film</td><td>Premium narrative film with full story architecture</td><td class="r gold">$7,500–$22,000</td><td>Project</td></tr>
+            <tr><td class="bold">Documentary Campaign</td><td>Multi-chapter visual campaign with narrative arc and multi-platform delivery</td><td class="r gold">$15,000–$45,000</td><td>Project</td></tr>
+            <tr><td class="bold">Investor / Donor Narrative</td><td>High-trust stakeholder film for capital raises and board presentations</td><td class="r gold">$10,000–$35,000</td><td>Project</td></tr>
+            <tr><td class="bold">Recruitment &amp; Culture Film</td><td>Employer brand narrative; interview-driven with cinematic grade</td><td class="r gold">$6,000–$18,000</td><td>Project</td></tr>
+            <tr><td class="bold">Monthly Retainer</td><td>Ongoing strategic visual content and campaign execution</td><td class="r gold">$3,500–$12,000/mo</td><td>Recurring</td></tr>
+          </tbody></table></div>
+        </div>
+        <div>
+          <p style="font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1rem;font-family:'JetBrains Mono',monospace">Air Division</p>
+          <div class="bp-table-wrap"><table class="bp-table"><thead><tr><th>Service</th><th>Description</th><th class="r">Price Range</th><th>Billing</th></tr></thead><tbody>
+            <tr><td class="bold">Aerial Cinematography</td><td>Premium drone capture for commercial, brand, real estate, and documentary</td><td class="r gold">$2,500–$8,500/day</td><td>Day Rate</td></tr>
+            <tr><td class="bold">Site Progress Documentation</td><td>Recurring aerial documentation with stakeholder reporting</td><td class="r gold">$3,000–$12,000/phase</td><td>Retainer</td></tr>
+            <tr><td class="bold">Thermal Imaging</td><td>IR imaging for roofing, HVAC, electrical, solar, and building envelope</td><td class="r gold">$2,000–$8,000</td><td>Project</td></tr>
+            <tr><td class="bold">Agricultural Monitoring</td><td>Crop health, irrigation, and land-use imaging with interpretive reporting</td><td class="r gold">$2,500–$10,000/cycle</td><td>Retainer</td></tr>
+            <tr><td class="bold">Infrastructure &amp; Facility</td><td>Tower, bridge, utility, and large-asset documentation with condition reporting</td><td class="r gold">$3,000–$15,000</td><td>Project</td></tr>
+          </tbody></table></div>
+        </div>
+        <div>
+          <p style="font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1rem;font-family:'JetBrains Mono',monospace">Academy Division</p>
+          <div class="bp-table-wrap"><table class="bp-table"><thead><tr><th>Service</th><th>Description</th><th class="r">Price Range</th><th>Billing</th></tr></thead><tbody>
+            <tr><td class="bold">Part 107 Prep Intensive</td><td>FAA exam prep, airspace law, weather, safety systems, ground school</td><td class="r gold">$850–$1,800/student</td><td>Per Student</td></tr>
+            <tr><td class="bold">Commercial Pilot Cohort</td><td>8-week hands-on flight progression on production-grade aircraft</td><td class="r gold">$2,500–$4,500/student</td><td>Per Cohort</td></tr>
+            <tr><td class="bold">Corporate Training Intensive</td><td>Custom half- or full-day training for brand, agency, or corporate teams</td><td class="r gold">$3,000–$10,000/day</td><td>Day Rate</td></tr>
+            <tr><td class="bold">White-Label Curriculum</td><td>Academy curriculum licensed to institutions and workforce programs</td><td class="r gold">$10,000–$40,000</td><td>License</td></tr>
+            <tr><td class="bold">Advisory Retainer</td><td>Ongoing standards, safety, and workflow advisory</td><td class="r gold">$2,500–$8,500/mo</td><td>Recurring</td></tr>
+          </tbody></table></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VI. FUNDING -->
+    <div class="bp-section" id="funding">
+      <div class="bp-section-label"><span class="bp-section-num">VI</span><span class="eyebrow" style="margin-bottom:0">Funding Request — $250,000</span></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start">
+        <div>
+          <p class="body-md" style="margin-bottom:2rem">Series Seed · 18-month full-launch runway. Every dollar maps to a billable capability or a protected operation.</p>
+          <div class="bp-table-wrap"><table class="bp-table"><thead><tr><th>Category</th><th class="r">Amount</th><th class="r">%</th></tr></thead><tbody>
+            <tr><td class="bold">Equipment (all divisions)</td><td class="r gold">$69,462</td><td class="r">27.8%</td></tr>
+            <tr><td class="bold">Brand &amp; Digital Infrastructure</td><td class="r">$18,000</td><td class="r">7.2%</td></tr>
+            <tr><td class="bold">Marketing &amp; Acquisition (18 mo.)</td><td class="r">$22,000</td><td class="r">8.8%</td></tr>
+            <tr><td class="bold">Payroll — Ops + Instructor</td><td class="r">$54,000</td><td class="r">21.6%</td></tr>
+            <tr><td class="bold">Founder Stipend (18 mo.)</td><td class="r">$36,000</td><td class="r">14.4%</td></tr>
+            <tr><td class="bold">Software &amp; Subscriptions</td><td class="r">$9,800</td><td class="r">3.9%</td></tr>
+            <tr><td class="bold">Insurance, FAA, Legal, Certs</td><td class="r">$17,400</td><td class="r">7.0%</td></tr>
+            <tr><td class="bold">Working Capital Reserve</td><td class="r">$23,338</td><td class="r">9.3%</td></tr>
+            <tr class="total"><td>TOTAL</td><td class="r">$250,000</td><td class="r">100%</td></tr>
+          </tbody></table></div>
+          <div class="cert-row">
+            <div class="cert-tile"><span class="cert-name">SDVOSB</span><p>VA set-aside · sole-source up to $5M</p></div>
+            <div class="cert-tile"><span class="cert-name">8(a)</span><p>9-year SBA program · $4.5M cap</p></div>
+            <div class="cert-tile"><span class="cert-name">FL OSBA</span><p>38 FL state agency categories</p></div>
+            <div class="cert-tile"><span class="cert-name">WIOA</span><p>Workforce grant · Academy training</p></div>
+          </div>
+        </div>
+        <div>
+          <div class="chart-card"><div class="chart-title">Use of Funds — $250,000</div><canvas id="donutChart" height="240"></canvas></div>
+          <div class="chart-card" style="margin-top:1.5rem"><div class="chart-title">Break-Even — Year 1 Cumulative ($000s)</div><canvas id="bkChart" height="200"></canvas></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VII. FINANCIALS -->
+    <div class="bp-section" id="financials">
+      <div class="bp-section-label"><span class="bp-section-num">VII</span><span class="eyebrow" style="margin-bottom:0">Five-Year Projections</span></div>
+      <div class="bp-table-wrap">
+        <table class="bp-table">
+          <thead><tr><th></th><th class="r">Year 1</th><th class="r">Year 2</th><th class="r">Year 3</th><th class="r">Year 4</th><th class="r">Year 5</th></tr></thead>
+          <tbody>
+            <tr class="section-row"><td colspan="6">REVENUE</td></tr>
+            <tr class="sub"><td>Studios</td><td class="r">$190,000</td><td class="r">$320,000</td><td class="r">$480,000</td><td class="r">$660,000</td><td class="r">$920,000</td></tr>
+            <tr class="sub"><td>Air</td><td class="r">$64,000</td><td class="r">$160,000</td><td class="r">$288,000</td><td class="r">$396,000</td><td class="r">$552,000</td></tr>
+            <tr class="sub"><td>Academy</td><td class="r">$62,500</td><td class="r">$108,000</td><td class="r">$156,000</td><td class="r">$264,000</td><td class="r">$368,000</td></tr>
+            <tr class="total"><td>Total Revenue</td><td class="r">$316,500</td><td class="r">$588,000</td><td class="r">$924,000</td><td class="r">$1,320,000</td><td class="r">$1,840,000</td></tr>
+            <tr><td class="bold">Gross Margin %</td><td class="r gold">69.9%</td><td class="r gold">70.5%</td><td class="r gold">70.6%</td><td class="r gold">71.0%</td><td class="r gold">71.0%</td></tr>
+            <tr><td class="bold">EBITDA</td><td class="r bold">$87,000</td><td class="r bold">$193,000</td><td class="r bold">$300,000</td><td class="r bold">$454,000</td><td class="r bold">$659,000</td></tr>
+            <tr class="total"><td>Net Income</td><td class="r gold">$43,267</td><td class="r gold">$128,287</td><td class="r gold">$214,087</td><td class="r gold">$337,327</td><td class="r gold">$499,567</td></tr>
+            <tr><td>Net Margin %</td><td class="r">13.7%</td><td class="r">21.8%</td><td class="r">23.2%</td><td class="r">25.6%</td><td class="r">27.1%</td></tr>
+            <tr class="section-row"><td colspan="6">YEAR 1 MONTHLY HIGHLIGHTS</td></tr>
+            <tr><td class="bold">Month 1</td><td class="r" style="color:#e07070" colspan="2">($6,400)</td><td colspan="3" style="color:var(--grey);font-size:.78rem">Ramp — Studios only</td></tr>
+            <tr><td class="bold">Month 4 ✓</td><td class="r gold" colspan="2">$3,200</td><td colspan="3" style="color:var(--grey);font-size:.78rem">Cash flow positive — all three divisions active</td></tr>
+            <tr><td class="bold">Month 9 ★</td><td class="r gold" colspan="2">$13,000</td><td colspan="3" style="color:var(--grey);font-size:.78rem">EBITDA positive — Academy cohort running</td></tr>
+            <tr class="total"><td>Year 1 Total</td><td class="r">$316,500</td><td class="r">$221,300 GP</td><td class="r" colspan="3">$88,300 net cash</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- IX. ROADMAP -->
+    <div class="bp-section" id="roadmap">
+      <div class="bp-section-label"><span class="bp-section-num">IX</span><span class="eyebrow" style="margin-bottom:0">Implementation Roadmap</span></div>
+      <div class="tl">
+        <div class="tl-item"><div class="tl-period">Mo. 0–2<br>Pre-Launch</div><div class="tl-dot"></div><div class="tl-title">Capital &amp; Infrastructure</div><div class="tl-body">Finalize raise · Acquire all equipment · Launch three domains · File SDVOSB · Form LLC · First outbound begins</div></div>
+        <div class="tl-item"><div class="tl-period">Mo. 1–3<br>Launch</div><div class="tl-dot"></div><div class="tl-title">Studios Revenue</div><div class="tl-body">First 3 paying clients · Flagship proof piece · Website live · Air fleet assembled and FAA current</div></div>
+        <div class="tl-item"><div class="tl-period">Mo. 3–6<br>Air</div><div class="tl-dot"></div><div class="tl-title">Air Activation · Cash Flow Positive Month 4</div><div class="tl-body">First 5 Air engagements · Academy pilot workshop · First retainer client signed</div></div>
+        <div class="tl-item"><div class="tl-period">Mo. 6–9<br>Academy</div><div class="tl-dot"></div><div class="tl-title">Academy Launch · EBITDA Month 9</div><div class="tl-body">First paying cohort · 2 workshops delivered · 3+ active retainers across divisions</div></div>
+        <div class="tl-item"><div class="tl-period">Mo. 9–12<br>Stabilize</div><div class="tl-dot"></div><div class="tl-title">Recurring Revenue Priority</div><div class="tl-body">Integrated account across 2+ divisions · Year 2 plan validated · 8(a) application in progress</div></div>
+        <div class="tl-item"><div class="tl-period">Year 2<br>Scale</div><div class="tl-dot"></div><div class="tl-title">Enterprise Expansion</div><div class="tl-body">Matrice 350 RTK + H30T acquired · Inspection vertical active · Academy 3 cohorts/year · $588K revenue</div></div>
+        <div class="tl-item"><div class="tl-period">Years 3–5<br>Leadership</div><div class="tl-dot"></div><div class="tl-title">Market Leadership</div><div class="tl-body">$924K → $1.84M · 7 FTE · FL market leader in story-first aerial · Academy white-label partners</div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- VIDEO BACKGROUND CTA -->
+  <section class="section has-video-bg" data-section-video="aerial">
+    <video class="section-video" src="videos/aerial.mp4" autoplay muted loop playsinline preload="none"></video>
+    <div class="section-video-overlay" style="background:linear-gradient(135deg,rgba(8,8,8,.9),rgba(8,8,8,.75))"></div>
+    <div class="container" style="text-align:center;position:relative;z-index:2">
+      <div class="gold-line gold-line-center reveal"></div>
+      <p class="eyebrow mb-6 reveal">Ready to Invest</p>
+      <h2 class="display-md reveal reveal-delay-1">Three divisions. One operating system.<br>A market no competitor currently owns.</h2>
+      <div class="cta-actions reveal reveal-delay-2">
+        <a href="pitch.html" class="btn btn-primary">View Pitch Package</a>
+        <a href="contact.html" class="btn btn-outline">Request Full Package</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand" style="gap:12px;">
+            <svg width="32" height="32" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="19" cy="19" r="17.5" stroke="#c9a84c" stroke-width="0.75" />
+              <circle cx="19" cy="19" r="5.5" stroke="#c9a84c" stroke-width="0.75" />
+              <line x1="19" y1="5" x2="19" y2="13.5" stroke="#c9a84c" stroke-width="0.5" />
+              <line x1="19" y1="24.5" x2="19" y2="33" stroke="#c9a84c" stroke-width="0.5" />
+              <line x1="5" y1="19" x2="13.5" y2="19" stroke="#c9a84c" stroke-width="0.5" />
+              <line x1="24.5" y1="19" x2="33" y2="19" stroke="#c9a84c" stroke-width="0.5" />
+              <text x="12" y="22" font-family="serif" font-size="9" font-weight="400" fill="#c9a84c" letter-spacing="0.5">EF</text>
+            </svg>
+            <div class="nav-wordmark">
+              <span class="nav-wordmark-main">Elevate Frame</span>
+              <span class="nav-wordmark-sub">Group</span>
+            </div>
+          </a>
+          <p class="footer-brand-statement">A premium visual, aerial, and training group built to connect story, flight, and disciplined growth under one roof.</p>
+          <a href="contact.html" class="btn btn-primary btn-sm" style="align-self:flex-start;">Book a Consultation</a>
+        </div>
+        <div>
+          <p class="footer-col-title">Divisions</p>
+          <ul class="footer-links">
+            <li><a href="studios.html">Studios</a></li>
+            <li><a href="air.html">Air</a></li>
+            <li><a href="academy.html">Academy</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Company</p>
+          <ul class="footer-links">
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Contact</p>
+          <ul class="footer-links" style="gap:8px;">
+            <li><a href="/cdn-cgi/l/email-protection#264e434a4a4966434a43504752434054474b4341544953560845494b"><span class="__cf_email__" data-cfemail="8fe7eae3e3e0cfeae3eaf9eefbeae9fdeee2eae8fde0faffa1ece0e2">[email&#160;protected]</span></a></li>
+            <li><span style="color:var(--grey);font-size:.85rem;">Boynton Beach, Florida</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Elevate Frame Group. All rights reserved.</p>
+        <div class="footer-legal"><a href="#">Privacy</a><a href="#">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+
+<script>
+(function(){
+const G='#c9a84c',BL='#7ba7bc',BN='#8b7355',MT='#6B7280',IV='#f4f2ee',INK='#080808';
+Chart.defaults.color=MT;Chart.defaults.borderColor='rgba(255,255,255,0.05)';
+Chart.defaults.font.family="'Inter',sans-serif";Chart.defaults.font.size=11;
+
+// Revenue chart — switchable by tab
+const revData = {
+  grouped:{labels:['Yr1','Yr2','Yr3','Yr4','Yr5'],datasets:[{label:'Studios',data:[190,320,480,660,920],backgroundColor:G,borderRadius:2},{label:'Air',data:[64,160,288,396,552],backgroundColor:BL,borderRadius:2},{label:'Academy',data:[62.5,108,156,264,368],backgroundColor:BN,borderRadius:2}]},
+  stacked:{labels:['Yr1','Yr2','Yr3','Yr4','Yr5'],datasets:[{label:'Studios',data:[190,320,480,660,920],backgroundColor:G,borderRadius:2},{label:'Air',data:[64,160,288,396,552],backgroundColor:BL,borderRadius:2},{label:'Academy',data:[62.5,108,156,264,368],backgroundColor:BN,borderRadius:2}]}
+};
+const revChart = new Chart(document.getElementById('revChart'),{type:'bar',data:revData.grouped,options:{responsive:true,plugins:{legend:{labels:{color:IV,boxWidth:8,font:{size:10}}}},scales:{x:{ticks:{color:IV},grid:{color:'rgba(255,255,255,0.04)'}},y:{ticks:{color:MT,callback:v=>`$${v}K`},grid:{color:'rgba(255,255,255,0.04)'}}}}});
+
+// Tab switching
+document.addEventListener('chartTabChange', e => {
+  if (e.detail.chartId !== 'revenue') return;
+  const stacked = e.detail.view === 'stacked';
+  revChart.options.scales.x.stacked = stacked;
+  revChart.options.scales.y.stacked = stacked;
+  revChart.update('active');
+});
+
+new Chart(document.getElementById('ebitdaChart'),{type:'bar',data:{labels:['Yr1','Yr2','Yr3','Yr4','Yr5'],datasets:[{label:'EBITDA',data:[-47,48,168,264,387],backgroundColor:ctx=>ctx.raw<0?'rgba(192,57,43,0.75)':'rgba(201,168,76,0.85)',borderRadius:2}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:IV},grid:{color:'rgba(255,255,255,0.04)'}},y:{ticks:{color:MT,callback:v=>`$${v}K`},grid:{color:'rgba(255,255,255,0.04)'}}}}});
+
+new Chart(document.getElementById('bkChart'),{type:'line',data:{labels:['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','M12'],datasets:[{label:'Revenue',data:[4,10,24,44,69,99,131.5,165,200.5,237.5,275.5,316.5],borderColor:G,backgroundColor:'rgba(201,168,76,0.06)',fill:true,tension:.4,borderWidth:2,pointRadius:3},{label:'Costs',data:[10.4,21.5,36.7,53.5,72.2,92.7,113.8,135.2,157.7,181,204.2,228.7],borderColor:BL,fill:false,tension:.4,borderWidth:2,borderDash:[4,3],pointRadius:3}]},options:{responsive:true,plugins:{legend:{labels:{color:IV,font:{size:10}}}},scales:{x:{ticks:{color:IV},grid:{color:'rgba(255,255,255,0.04)'}},y:{ticks:{color:MT,callback:v=>`$${v}K`},grid:{color:'rgba(255,255,255,0.04)'}}}}});
+
+new Chart(document.getElementById('donutChart'),{type:'doughnut',data:{labels:['Equipment','Brand','Marketing','Payroll','Stipend','Software','Legal','Reserve'],datasets:[{data:[69462,18000,22000,54000,36000,9800,17400,23338],backgroundColor:[G,'#c49a3a',BL,'#6b8fa3','#4a7a96',BN,'#9b8e7a',MT],borderWidth:3,borderColor:INK}]},options:{cutout:'55%',plugins:{legend:{position:'bottom',labels:{color:IV,boxWidth:8,font:{size:9},padding:6}},tooltip:{callbacks:{label:c=>` ${c.raw.toLocaleString()}`}}}}});
+
+new Chart(document.getElementById('marginChart'),{type:'bar',data:{labels:['Studios','Air','Academy'],datasets:[{data:[65,75,80],backgroundColor:[G,BL,BN],borderRadius:4}]},options:{indexAxis:'y',responsive:true,plugins:{legend:{display:false}},scales:{x:{min:0,max:100,ticks:{color:MT,callback:v=>`${v}%`},grid:{color:'rgba(255,255,255,0.04)'}},y:{ticks:{color:IV},grid:{display:false}}}}});
+
+// Animated bars
+const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.style.width=x.target.dataset.w+'%';io.unobserve(x.target)}})},{threshold:.3});
+document.querySelectorAll('.bar-fill').forEach(f=>io.observe(f));
+})();
+</script>
+
+  <script type="module"
+      src="https://agent.d-id.com/v2/index.js"
+      data-mode="fabio"
+      data-client-key="Z29vZ2xlLW9hdXRoMnwxMDY2MDc0NjgyMTUyMzQzNjE4ODI6ZTNQZ0I4Y21UVXVXakdaQjhkWXlV"
+      data-agent-id="v2_agt_ff1_AILj"
+      data-name="did-agent"
+      data-monitor="true"
+      data-orientation="horizontal"
+      data-position="right"
+      data-open-mode="expanded">
+  </script>
+</body>
+</html>

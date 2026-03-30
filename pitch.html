@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Pitch Package — Elevate Frame Group</title>
+  <meta name="description" content="Elevate Frame Group investor pitch. $250K Series Seed. Interactive AI avatar presentation."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    .pitch-hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.18) saturate(.4);z-index:0}
+    .pitch-slide{animation:slideIn .4s ease}
+    @keyframes slideIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+    .did-slide-title{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--white-soft);margin-bottom:1rem;line-height:1.15}
+    .did-slide-body{font-size:.9rem;color:var(--white-muted);line-height:1.85}
+    .did-slide-body strong{color:var(--white-soft)}
+    .slide-counter{font-family:'JetBrains Mono',monospace;font-size:.65rem;color:var(--grey);letter-spacing:.1em}
+    .did-pitch-layout{display:grid;grid-template-columns:280px 1fr;gap:2.5rem;align-items:start;margin-top:2rem}
+    .pitch-nav-row{display:flex;align-items:center;justify-content:space-between;margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--black-border)}
+    .pitch-nav-btn{padding:.6rem 1.5rem;font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;background:transparent;color:var(--grey);border:1px solid var(--black-border);cursor:pointer;transition:all .2s;font-family:'Inter',sans-serif;border-radius:2px}
+    .pitch-nav-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+    .pitch-nav-btn:disabled{opacity:.3;cursor:not-allowed}
+    .did-api-notice{display:none;font-size:.7rem;color:var(--grey);text-align:center;padding:.75rem;border:1px solid var(--black-border);margin-top:.75rem;font-family:'JetBrains Mono',monospace;line-height:1.5}
+    @media(max-width:900px){.did-pitch-layout{grid-template-columns:1fr}.pitch-slide>div{grid-template-columns:1fr!important}}
+  </style>
+
+<style>
+/* CRITICAL OVERRIDES */
+.hero .reveal, .hero-page .reveal { opacity:1 !important; transform:none !important; }
+.hero-content, .hero > .container, .hero-page > .container { position:relative !important; z-index:10 !important; }
+.hero-video, .bp-hero-video, .pitch-hero-video { position:absolute !important; inset:0 !important; width:100% !important; height:100% !important; object-fit:cover !important; z-index:0 !important; filter:brightness(.45) saturate(.7) !important; pointer-events:none !important; }
+.hero-bg, .hero::before, .hero-page::before { position:absolute !important; inset:0 !important; z-index:1 !important; pointer-events:none !important; }
+</style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand" aria-label="Elevate Frame Group Home">
+        <svg class="nav-monogram" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Gold ring -->
+          <circle cx="19" cy="19" r="17.5" stroke="#c9a84c" stroke-width="0.75" />
+          <!-- Shutter blades -->
+          <circle cx="19" cy="19" r="5.5" stroke="#c9a84c" stroke-width="0.75" />
+          <line x1="19" y1="5" x2="19" y2="13.5" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="19" y1="24.5" x2="19" y2="33" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="5" y1="19" x2="13.5" y2="19" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="24.5" y1="19" x2="33" y2="19" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="9.2" y1="9.2" x2="15.2" y2="15.2" stroke="#c9a84c" stroke-width="0.4" />
+          <line x1="22.8" y1="22.8" x2="28.8" y2="28.8" stroke="#c9a84c" stroke-width="0.4" />
+          <line x1="28.8" y1="9.2" x2="22.8" y2="15.2" stroke="#c9a84c" stroke-width="0.4" />
+          <line x1="15.2" y1="22.8" x2="9.2" y2="28.8" stroke="#c9a84c" stroke-width="0.4" />
+          <!-- EF monogram -->
+          <text x="12" y="22" font-family="Cormorant Garamond, serif" font-size="9" font-weight="400" fill="#c9a84c" letter-spacing="0.5">EF</text>
+        </svg>
+        <div class="nav-wordmark">
+          <span class="nav-wordmark-main">Elevate Frame</span>
+          <span class="nav-wordmark-sub">Group</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="studios.html">Studios</a>
+        <a href="air.html">Air</a>
+        <a href="academy.html">Academy</a>
+        <a href="work.html">Work</a>
+        <a href="business-plan.html">Plan</a>
+        <a href="pitch.html" class="active">Pitch</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-primary btn-sm">Book a Consultation</a>
+        <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="nav-mobile" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="studios.html">Studios</a>
+    <a href="air.html">Air</a>
+    <a href="academy.html">Academy</a>
+    <a href="work.html">Work</a>
+    <a href="business-plan.html">Business Plan</a>
+    <a href="pitch.html">Pitch Package</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top:8px;">Book a Consultation</a>
+  </div>
+
+  <section class="hero" style="min-height:85vh">
+    <video class="pitch-hero-video" src="videos/aerial.mp4" autoplay muted loop playsinline preload="auto"></video>
+    <div class="hero-bg"><div class="hero-bg-gradient"></div><div class="hero-bg-fallback"></div><div class="hero-bg-grid"></div></div>
+    <div class="hero-content container">
+      <div class="hero-inner">
+        <div class="hero-eyebrow reveal"><span class="hero-eyebrow-line"></span><span class="eyebrow">Series Seed · $250,000 · 2025–2030</span></div>
+        <h1 class="display-xl hero-headline reveal reveal-delay-1">Elevate Frame Group<br><em style="color:var(--gold);font-style:italic">Pitch Package.</em></h1>
+        <p class="hero-sub body-lg reveal reveal-delay-2">A Florida-based, disabled minority veteran-owned aerial media enterprise. Three integrated divisions. Story-first methodology. $1.84M Year 5 revenue. <strong style="color:var(--white-soft)">Interactive AI-powered presentation below.</strong></p>
+        <div class="hero-actions reveal reveal-delay-3">
+          <a href="#avatar-pitch" class="btn btn-primary">&#9654; Start Interactive Pitch</a>
+          <a href="business-plan.html" class="btn btn-outline">Read Business Plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="intro-band">
+    <div class="container"><div class="intro-band-inner">
+      <div class="intro-stat"><span class="intro-stat-number">$250K</span><span class="intro-stat-label">Raise Sought</span></div>
+      <div class="intro-stat"><span class="intro-stat-number">$316K</span><span class="intro-stat-label">Year 1 Revenue</span></div>
+      <div class="intro-stat"><span class="intro-stat-number">$1.84M</span><span class="intro-stat-label">Year 5 Projection</span></div>
+      <div class="intro-stat"><span class="intro-stat-number">Mo. 4</span><span class="intro-stat-label">Cash Flow Positive</span></div>
+      <div class="intro-stat"><p class="body-sm" style="text-align:center">Florida-based · Disabled &amp; minority veteran-owned · Story-first</p></div>
+    </div></div>
+  </div>
+
+  <section class="section section-mid" id="avatar-pitch">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="gold-line"></div>
+        <p class="eyebrow mb-6">Interactive Presentation</p>
+        <h2 class="display-md">Meet your AI presenter.<br><em>Six slides. Click once to begin.</em></h2>
+        <p class="body-md" style="max-width:640px;margin-top:.75rem">Click <strong style="color:var(--white-soft)">Begin Presentation</strong> and your AI presenter walks through the full EFG pitch — opportunity, problem, solution, market, financials, and the ask. Each slide advances automatically after narration.</p>
+      </div>
+
+      <div class="did-pitch-layout" data-did-widget="pitch" data-presenter="pitch">
+        <div>
+          <div class="did-container">
+            <div class="did-video-wrap">
+              <img class="did-idle-img" src="https://create-images-results.d-id.com/DefaultPresenters/Sophia_f/image.jpeg" alt="EFG Pitch Presenter — Sophia"
+                   onerror="this.style.display='none';this.parentElement.querySelector('.did-presenter-fallback').style.display='flex'">
+              <div class="did-presenter-fallback" style="display:none;position:absolute;inset:0;background:linear-gradient(180deg,#1a1a1a 0%,#0d0d0d 100%);flex-direction:column;align-items:center;justify-content:center;gap:1rem">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                  <circle cx="40" cy="40" r="39" stroke="#c9a84c" stroke-width="1"/>
+                  <circle cx="40" cy="32" r="14" stroke="#c9a84c" stroke-width="1" fill="rgba(201,168,76,0.1)"/>
+                  <path d="M14 70c0-14.36 11.64-26 26-26s26 11.64 26 26" stroke="#c9a84c" stroke-width="1" fill="rgba(201,168,76,0.1)"/>
+                  <text x="40" y="36" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="11" fill="#c9a84c" letter-spacing="1">SOPHIA</text>
+                </svg>
+                <span style="font-family:JetBrains Mono,monospace;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:#c9a84c">EFG Presenter</span>
+              </div>
+              <div class="did-play-overlay" id="pitch-play-overlay">
+                <button class="did-big-play-btn" onclick="document.querySelector('[data-did-widget=pitch] .did-speak-btn').click();document.getElementById('pitch-play-overlay').style.display='none'">
+                  <svg viewBox="0 0 24 24" width="36" height="36"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                </button>
+                <span>Click to begin</span>
+              </div>
+              <video class="did-video" style="display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
+              <div class="did-status"><div class="did-status-dot idle"></div><span class="did-status-text">Ready</span></div>
+            </div>
+            <div class="did-controls">
+              <button class="did-speak-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Begin Presentation
+              </button>
+              <div class="did-slide-nav" style="display:flex;gap:.5rem;justify-content:center;margin-top:.5rem"><button class="did-slide-dot active" onclick="EFGPitch.goto(0)"></button><button class="did-slide-dot" onclick="EFGPitch.goto(1)"></button><button class="did-slide-dot" onclick="EFGPitch.goto(2)"></button><button class="did-slide-dot" onclick="EFGPitch.goto(3)"></button><button class="did-slide-dot" onclick="EFGPitch.goto(4)"></button><button class="did-slide-dot" onclick="EFGPitch.goto(5)"></button></div>
+              <div class="did-transcript">Ready to present. Click Speak or use the dots to navigate.</div>
+              
+              
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem">
+            <span class="slide-counter" id="slideCounter">Slide 1 of 6</span>
+            <div style="display:flex;gap:.75rem">
+              <button class="pitch-nav-btn" id="prevBtn" onclick="EFGPitch.prev()" disabled>&#8592; Prev</button>
+              <button class="pitch-nav-btn" id="nextBtn" onclick="EFGPitch.next()">Next &#8594;</button>
+            </div>
+          </div>
+<div class="pitch-slide" id="slide-0" style="display:block">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start">
+        <div>
+          <div class="reel-card" style="aspect-ratio:16/10">
+            <video src="videos/aerial.mp4" autoplay muted loop playsinline preload="auto" style="width:100%;height:100%;object-fit:cover;filter:brightness(.55) saturate(.65)"></video>
+            <div class="reel-card-overlay"><span class="reel-label">01 — The Opportunity</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="did-slide-title">Story-first visual intelligence.</div>
+          <div class="did-slide-body"><p style="margin-bottom:1rem">Elevate Frame Group is seeking <strong style="color:var(--white-soft)">$250,000 in Series Seed funding</strong> — 18-month runway to cash-flow positive across three integrated revenue divisions.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:1.5rem">
+      <div style="background:var(--black-rich);border:1px solid var(--black-border);border-top:2px solid var(--gold);padding:1.25rem"><div style="font-family:Cormorant Garamond,serif;font-size:1.8rem;color:var(--white-soft)">$250K</div><div style="font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--grey)">Raise Sought</div></div>
+      <div style="background:var(--black-rich);border:1px solid var(--black-border);border-top:2px solid var(--gold);padding:1.25rem"><div style="font-family:Cormorant Garamond,serif;font-size:1.8rem;color:var(--white-soft)">$316K</div><div style="font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--grey)">Year 1 Revenue</div></div>
+      <div style="background:var(--black-rich);border:1px solid var(--black-border);border-top:2px solid var(--gold);padding:1.25rem"><div style="font-family:Cormorant Garamond,serif;font-size:1.8rem;color:var(--white-soft)">$1.84M</div><div style="font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--grey)">Year 5 Projection</div></div>
+      <div style="background:var(--black-rich);border:1px solid var(--black-border);border-top:2px solid var(--gold);padding:1.25rem"><div style="font-family:Cormorant Garamond,serif;font-size:1.8rem;color:var(--white-soft)">Month 4</div><div style="font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--grey)">Cash Flow Positive</div></div>
+    </div></div>
+        </div>
+      </div>
+    </div>
+<div class="pitch-slide" id="slide-1" style="display:none">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start">
+        <div>
+          <div class="reel-card" style="aspect-ratio:16/10">
+            <video src="videos/city.mp4" autoplay muted loop playsinline preload="auto" style="width:100%;height:100%;object-fit:cover;filter:brightness(.55) saturate(.65)"></video>
+            <div class="reel-card-overlay"><span class="reel-label">02 — The Problem</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="did-slide-title">The market is full of imagery. Empty of meaning.</div>
+          <div class="did-slide-body"><p style="margin-bottom:1rem">Most media companies produce footage, not meaning. Technical operators capture data interpretable by no one. Most firms turn expertise into a cost center instead of a revenue engine.</p>
+    <div style="display:flex;flex-direction:column;gap:.75rem;margin-top:1.25rem">
+      <div style="padding:1rem 1.25rem;background:var(--black-rich);border-left:2px solid var(--gold)"><strong style="font-size:.8rem;color:var(--white-soft)">No Narrative</strong><p style="font-size:.78rem;color:var(--grey);margin-top:.2rem">Beautiful content that says nothing and builds no trust.</p></div>
+      <div style="padding:1rem 1.25rem;background:var(--black-rich);border-left:2px solid var(--gold)"><strong style="font-size:.8rem;color:var(--white-soft)">No Rigor</strong><p style="font-size:.78rem;color:var(--grey);margin-top:.2rem">Technical data without interpretation — unusable information.</p></div>
+      <div style="padding:1rem 1.25rem;background:var(--black-rich);border-left:2px solid var(--gold)"><strong style="font-size:.8rem;color:var(--white-soft)">No Integration</strong><p style="font-size:.78rem;color:var(--grey);margin-top:.2rem">No single firm offers story + aerial + training under one roof.</p></div>
+    </div></div>
+        </div>
+      </div>
+    </div>
+<div class="pitch-slide" id="slide-2" style="display:none">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start">
+        <div>
+          <div class="reel-card" style="aspect-ratio:16/10">
+            <video src="videos/drone.mp4" autoplay muted loop playsinline preload="auto" style="width:100%;height:100%;object-fit:cover;filter:brightness(.55) saturate(.65)"></video>
+            <div class="reel-card-overlay"><span class="reel-label">03 — The Solution</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="did-slide-title">Story as the operating system.</div>
+          <div class="did-slide-body"><p style="margin-bottom:1.25rem">Three divisions. One system. Compounding client lifetime value.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--black-border)">
+      <div style="background:var(--black-card);padding:1.5rem"><p style="font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem">Studios</p><p style="font-size:.82rem;color:var(--white-muted);line-height:1.7">Narrative production, brand films, campaigns, retainers.</p><p style="font-family:JetBrains Mono,monospace;font-size:.68rem;color:var(--gold);margin-top:.75rem">$7.5K–$45K</p></div>
+      <div style="background:var(--black-card);padding:1.5rem"><p style="font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem">Air</p><p style="font-size:.82rem;color:var(--white-muted);line-height:1.7">Aerial cinema, site documentation, thermal imaging.</p><p style="font-family:JetBrains Mono,monospace;font-size:.68rem;color:var(--gold);margin-top:.75rem">$2.5K–$18K</p></div>
+      <div style="background:var(--black-card);padding:1.5rem"><p style="font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem">Academy</p><p style="font-size:.82rem;color:var(--white-muted);line-height:1.7">Pilot development, SOP design, white-label curriculum.</p><p style="font-family:JetBrains Mono,monospace;font-size:.68rem;color:var(--gold);margin-top:.75rem">$850–$40K</p></div>
+    </div>
+    <p style="font-size:.78rem;color:var(--grey);margin-top:1.25rem;padding:1rem;background:var(--black-rich);border:1px solid var(--black-border)">Stacking model: client enters through Studios, adds Air for scale and context, deepens through Academy for operational standards. Three revenue lanes. One relationship.</p></div>
+        </div>
+      </div>
+    </div>
+<div class="pitch-slide" id="slide-3" style="display:none">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start">
+        <div>
+          <div class="reel-card" style="aspect-ratio:16/10">
+            <video src="videos/aerial.mp4" autoplay muted loop playsinline preload="auto" style="width:100%;height:100%;object-fit:cover;filter:brightness(.55) saturate(.65)"></video>
+            <div class="reel-card-overlay"><span class="reel-label">04 — The Market</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="did-slide-title">$21.4B addressable. Florida is the entry.</div>
+          <div class="did-slide-body"><canvas id="pitchRev" height="220" style="margin-bottom:1.25rem"></canvas>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem">
+      <div style="padding:.875rem;background:var(--black-rich);border:1px solid var(--black-border)"><div style="font-size:.82rem;font-weight:700;color:var(--white-soft)">$43B</div><div style="font-size:.68rem;color:var(--grey)">U.S. Video Production +4.1% CAGR</div></div>
+      <div style="padding:.875rem;background:var(--black-rich);border:1px solid var(--black-border)"><div style="font-size:.82rem;font-weight:700;color:var(--white-soft)">$7.8B</div><div style="font-size:.68rem;color:var(--grey)">Commercial Drones +16.4% CAGR</div></div>
+      <div style="padding:.875rem;background:var(--black-rich);border:1px solid var(--black-border)"><div style="font-size:.82rem;font-weight:700;color:var(--white-soft)">$14.2B</div><div style="font-size:.68rem;color:var(--grey)">FL Active Construction — immediate Air market</div></div>
+      <div style="padding:.875rem;background:var(--black-rich);border:1px solid var(--black-border)"><div style="font-size:.82rem;font-weight:700;color:var(--white-soft)">91%</div><div style="font-size:.68rem;color:var(--grey)">Businesses use video — 82% report positive ROI</div></div>
+    </div></div>
+        </div>
+      </div>
+    </div>
+<div class="pitch-slide" id="slide-4" style="display:none">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start">
+        <div>
+          <div class="reel-card" style="aspect-ratio:16/10">
+            <video src="videos/city.mp4" autoplay muted loop playsinline preload="auto" style="width:100%;height:100%;object-fit:cover;filter:brightness(.55) saturate(.65)"></video>
+            <div class="reel-card-overlay"><span class="reel-label">05 — The Financials</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="did-slide-title">Conservative model. Credible path.</div>
+          <div class="did-slide-body"><canvas id="pitchFin" height="220" style="margin-bottom:1.25rem"></canvas>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem">
+      <div style="background:var(--black-rich);border:1px solid var(--black-border);border-top:2px solid var(--gold);padding:1.25rem;text-align:center"><div style="font-family:Cormorant Garamond,serif;font-size:1.5rem;color:var(--white-soft)">Month 4</div><div style="font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--grey)">Cash Positive</div></div>
+      <div style="background:var(--black-rich);border:1px solid var(--black-border);border-top:2px solid var(--gold);padding:1.25rem;text-align:center"><div style="font-family:Cormorant Garamond,serif;font-size:1.5rem;color:var(--white-soft)">Month 9</div><div style="font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--grey)">EBITDA Positive</div></div>
+      <div style="background:var(--black-rich);border:1px solid var(--black-border);border-top:2px solid var(--gold);padding:1.25rem;text-align:center"><div style="font-family:Cormorant Garamond,serif;font-size:1.5rem;color:var(--white-soft)">27.1%</div><div style="font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--grey)">Year 5 Net Margin</div></div>
+    </div></div>
+        </div>
+      </div>
+    </div>
+<div class="pitch-slide" id="slide-5" style="display:none">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start">
+        <div>
+          <div class="reel-card" style="aspect-ratio:16/10">
+            <video src="videos/aerial.mp4" autoplay muted loop playsinline preload="auto" style="width:100%;height:100%;object-fit:cover;filter:brightness(.55) saturate(.65)"></video>
+            <div class="reel-card-overlay"><span class="reel-label">06 — The Ask</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="did-slide-title">$250,000. 18 months. Cash-flow positive.</div>
+          <div class="did-slide-body"><p style="margin-bottom:1.5rem">Every dollar maps to a billable capability, a protected operation, or a month of founder focus.</p>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;margin-bottom:1.5rem">
+      <div style="padding:1rem;background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.2)"><div style="font-family:Cormorant Garamond,serif;font-size:1.4rem;color:var(--gold)">SDVOSB</div><p style="font-size:.72rem;color:var(--grey)">VA set-aside — sole-source up to $5M — $25B+ access</p></div>
+      <div style="padding:1rem;background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.2)"><div style="font-family:Cormorant Garamond,serif;font-size:1.4rem;color:var(--gold)">8(a)</div><p style="font-size:.72rem;color:var(--grey)">9-year SBA program — sole-source up to $4.5M</p></div>
+      <div style="padding:1rem;background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.2)"><div style="font-family:Cormorant Garamond,serif;font-size:1.4rem;color:var(--gold)">FL OSBA</div><p style="font-size:.72rem;color:var(--grey)">38 FL state agency procurement categories</p></div>
+      <div style="padding:1rem;background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.2)"><div style="font-family:Cormorant Garamond,serif;font-size:1.4rem;color:var(--gold)">WIOA</div><p style="font-size:.72rem;color:var(--grey)">Workforce grant — Academy drone training</p></div>
+    </div>
+    <div style="text-align:center;padding:1.5rem;background:var(--black-card);border:1px solid var(--gold-rule)">
+      <p style="font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem">Ready to move forward?</p>
+      <p style="font-size:.875rem;color:var(--white-soft);margin-bottom:1rem">gregorydgoyins@gmail.com · 561.600.2271</p>
+      <a href="contact.html" class="btn btn-primary btn-sm">Start the Conversation</a>
+    </div></div>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section has-video-bg">
+    <video class="section-video" src="videos/drone.mp4" autoplay muted loop playsinline preload="none"></video>
+    <div class="section-video-overlay"></div>
+    <div class="container" style="position:relative;z-index:2">
+      <div style="display:grid;grid-template-columns:1fr 2fr;gap:4rem;align-items:center">
+        <div><img src="images/business-card.jpg" alt="EFG Business Card" class="brand-card-img" onerror="this.style.opacity='.2'"></div>
+        <div>
+          <div class="gold-line"></div>
+          <p class="eyebrow mb-6">The Founder</p>
+          <h2 class="display-md mb-8">Gregory D. Goyins</h2>
+          <p class="body-lg" style="margin-bottom:1.25rem">Disabled minority veteran. Military service. Aviation training under Embry-Riddle mentorship. Story work connected to the rehabilitation of Jayson Williams — later featured on <em style="color:var(--white-soft)">60 Minutes Sports.</em></p>
+          <div class="quote-block" style="margin-top:1.5rem">
+            <blockquote>"Imagery without story is noise. Technical imagery without interpretation is dead weight."</blockquote>
+            <cite>Gregory D. Goyins · CEO &amp; Founder</cite>
+          </div>
+          <div style="display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap">
+            <a href="contact.html" class="btn btn-primary">Request Full Package</a>
+            <a href="business-plan.html" class="btn btn-outline">Read Business Plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm section-dark">
+    <div class="container"><div class="video-grid-3">
+      <div class="reel-card"><video src="videos/studio.mp4" muted loop playsinline preload="auto"></video><div class="reel-play"><button class="reel-play-btn"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button></div><div class="reel-card-overlay"><span class="reel-label">Studios Reel</span><span class="reel-sublabel">Narrative · Brand · Film</span></div></div>
+      <div class="reel-card"><video src="videos/aerial.mp4" muted loop playsinline preload="auto"></video><div class="reel-play"><button class="reel-play-btn"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button></div><div class="reel-card-overlay"><span class="reel-label">Air Reel</span><span class="reel-sublabel">Aerial · Cinema · Operations</span></div></div>
+      <div class="reel-card"><video src="videos/studio.mp4" muted loop playsinline preload="auto"></video><div class="reel-play"><button class="reel-play-btn"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button></div><div class="reel-card-overlay"><span class="reel-label">Academy Reel</span><span class="reel-sublabel">Training · Standards · Development</span></div></div>
+    </div></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand" style="gap:12px;">
+            <svg width="32" height="32" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="19" cy="19" r="17.5" stroke="#c9a84c" stroke-width="0.75" />
+              <circle cx="19" cy="19" r="5.5" stroke="#c9a84c" stroke-width="0.75" />
+              <line x1="19" y1="5" x2="19" y2="13.5" stroke="#c9a84c" stroke-width="0.5" />
+              <line x1="19" y1="24.5" x2="19" y2="33" stroke="#c9a84c" stroke-width="0.5" />
+              <line x1="5" y1="19" x2="13.5" y2="19" stroke="#c9a84c" stroke-width="0.5" />
+              <line x1="24.5" y1="19" x2="33" y2="19" stroke="#c9a84c" stroke-width="0.5" />
+              <text x="12" y="22" font-family="serif" font-size="9" font-weight="400" fill="#c9a84c" letter-spacing="0.5">EF</text>
+            </svg>
+            <div class="nav-wordmark">
+              <span class="nav-wordmark-main">Elevate Frame</span>
+              <span class="nav-wordmark-sub">Group</span>
+            </div>
+          </a>
+          <p class="footer-brand-statement">A premium visual, aerial, and training group built to connect story, flight, and disciplined growth under one roof.</p>
+          <a href="contact.html" class="btn btn-primary btn-sm" style="align-self:flex-start;">Book a Consultation</a>
+        </div>
+        <div>
+          <p class="footer-col-title">Divisions</p>
+          <ul class="footer-links">
+            <li><a href="studios.html">Studios</a></li>
+            <li><a href="air.html">Air</a></li>
+            <li><a href="academy.html">Academy</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Company</p>
+          <ul class="footer-links">
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Contact</p>
+          <ul class="footer-links" style="gap:8px;">
+            <li><a href="/cdn-cgi/l/email-protection#264e434a4a4966434a43504752434054474b4341544953560845494b"><span class="__cf_email__" data-cfemail="8fe7eae3e3e0cfeae3eaf9eefbeae9fdeee2eae8fde0faffa1ece0e2">[email&#160;protected]</span></a></li>
+            <li><span style="color:var(--grey);font-size:.85rem;">Boynton Beach, Florida</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Elevate Frame Group. All rights reserved.</p>
+        <div class="footer-legal"><a href="#">Privacy</a><a href="#">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+
+<script>
+window.EFGPitch = (function(){
+  var current=0, total=6;
+  function goto(i){
+    document.getElementById('slide-'+current).style.display='none';
+    current=Math.max(0,Math.min(i,total-1));
+    document.getElementById('slide-'+current).style.display='block';
+    document.getElementById('slideCounter').textContent='Slide '+(current+1)+' of '+total;
+    document.getElementById('prevBtn').disabled=current===0;
+    document.getElementById('nextBtn').disabled=current===total-1;
+    document.querySelectorAll('.did-slide-nav .did-slide-dot').forEach(function(d,idx){d.classList.toggle('active',idx===current);});
+    if(current===3&&window.Chart&&!window._pc4){window._pc4=true;
+      var G='#c9a84c',BL='#7ba7bc',BN='#8b7355',MT='#6B7280',IV='#f4f2ee';
+      new Chart(document.getElementById('pitchRev'),{type:'bar',data:{labels:['Yr1','Yr2','Yr3','Yr4','Yr5'],datasets:[{label:'Studios',data:[190,320,480,660,920],backgroundColor:G,borderRadius:2},{label:'Air',data:[64,160,288,396,552],backgroundColor:BL,borderRadius:2},{label:'Academy',data:[62.5,108,156,264,368],backgroundColor:BN,borderRadius:2}]},options:{responsive:true,plugins:{legend:{labels:{color:IV,boxWidth:8,font:{size:9}}}},scales:{x:{ticks:{color:IV},grid:{color:'rgba(255,255,255,0.04)'}},y:{ticks:{color:MT,callback:function(v){return'$'+v+'K'}},grid:{color:'rgba(255,255,255,0.04)'}}}}});}
+    if(current===4&&window.Chart&&!window._pc5){window._pc5=true;
+      var G='#c9a84c',BL='#7ba7bc',MT='#6B7280',IV='#f4f2ee';
+      new Chart(document.getElementById('pitchFin'),{type:'line',data:{labels:['Yr1','Yr2','Yr3','Yr4','Yr5'],datasets:[{label:'Revenue',data:[316.5,588,924,1320,1840],borderColor:G,backgroundColor:'rgba(201,168,76,0.06)',fill:true,tension:.4,borderWidth:2,pointRadius:4},{label:'Net Income',data:[43,128,214,337,500],borderColor:BL,fill:false,tension:.4,borderWidth:2,pointRadius:4}]},options:{responsive:true,plugins:{legend:{labels:{color:IV,boxWidth:8,font:{size:9}}}},scales:{x:{ticks:{color:IV},grid:{color:'rgba(255,255,255,0.04)'}},y:{ticks:{color:MT,callback:function(v){return'$'+v+'K'}},grid:{color:'rgba(255,255,255,0.04)'}}}}});}
+  }
+  return{goto:goto,next:function(){goto(current+1)},prev:function(){goto(current-1)}};
+})();
+</script>
+
+  <script type="module"
+      src="https://agent.d-id.com/v2/index.js"
+      data-mode="fabio"
+      data-client-key="Z29vZ2xlLW9hdXRoMnwxMDY2MDc0NjgyMTUyMzQzNjE4ODI6ZTNQZ0I4Y21UVXVXakdaQjhkWXlV"
+      data-agent-id="v2_agt_ff1_AILj"
+      data-name="did-agent"
+      data-monitor="true"
+      data-orientation="horizontal"
+      data-position="right"
+      data-open-mode="expanded">
+  </script>
+</body>
+</html>

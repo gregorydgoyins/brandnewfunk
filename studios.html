@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studios — Elevate Frame Group</title>
+  <meta name="description" content="Story-first production for brands, founders, organizations, and campaigns. Elevate Frame Group Studios creates premium visual work built to move people and carry meaning." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<style>
+/* CRITICAL OVERRIDES */
+.hero .reveal, .hero-page .reveal { opacity:1 !important; transform:none !important; }
+.hero-content, .hero > .container, .hero-page > .container { position:relative !important; z-index:10 !important; }
+.hero-video, .bp-hero-video, .pitch-hero-video { position:absolute !important; inset:0 !important; width:100% !important; height:100% !important; object-fit:cover !important; z-index:0 !important; filter:brightness(.45) saturate(.7) !important; pointer-events:none !important; }
+.hero-bg, .hero::before, .hero-page::before { position:absolute !important; inset:0 !important; z-index:1 !important; pointer-events:none !important; }
+</style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand" aria-label="Elevate Frame Group Home">
+        <svg class="nav-monogram" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="19" cy="19" r="17.5" stroke="#c9a84c" stroke-width="0.75" />
+          <circle cx="19" cy="19" r="5.5" stroke="#c9a84c" stroke-width="0.75" />
+          <line x1="19" y1="5" x2="19" y2="13.5" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="19" y1="24.5" x2="19" y2="33" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="5" y1="19" x2="13.5" y2="19" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="24.5" y1="19" x2="33" y2="19" stroke="#c9a84c" stroke-width="0.5" />
+          <line x1="9.2" y1="9.2" x2="15.2" y2="15.2" stroke="#c9a84c" stroke-width="0.4" />
+          <line x1="22.8" y1="22.8" x2="28.8" y2="28.8" stroke="#c9a84c" stroke-width="0.4" />
+          <line x1="28.8" y1="9.2" x2="22.8" y2="15.2" stroke="#c9a84c" stroke-width="0.4" />
+          <line x1="15.2" y1="22.8" x2="9.2" y2="28.8" stroke="#c9a84c" stroke-width="0.4" />
+          <text x="12" y="22" font-family="Cormorant Garamond, serif" font-size="9" font-weight="400" fill="#c9a84c" letter-spacing="0.5">EF</text>
+        </svg>
+        <div class="nav-wordmark">
+          <span class="nav-wordmark-main">Elevate Frame</span>
+          <span class="nav-wordmark-sub">Group</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="studios.html" class="active">Studios</a>
+        <a href="air.html">Air</a>
+        <a href="academy.html">Academy</a>
+        <a href="work.html">Work</a>
+        <a href="business-plan.html">Plan</a>
+        <a href="pitch.html">Pitch</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="contact.html?division=studios" class="btn btn-primary btn-sm">Start a Studios Project</a>
+        <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="studios.html">Studios</a>
+    <a href="air.html">Air</a>
+    <a href="academy.html">Academy</a>
+    <a href="work.html">Work</a>
+    <a href="business-plan.html">Business Plan</a>
+    <a href="pitch.html">Pitch Package</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html?division=studios" class="btn btn-primary" style="margin-top:8px;">Start a Studios Project</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero-page section-rich">
+    <video class="hero-video" src="videos/studio.mp4" autoplay muted loop playsinline preload="auto"></video>
+    <div class="hero-bg">
+      <div class="hero-bg-gradient"></div><div class="hero-bg-fallback"></div>
+      <div class="hero-bg-grid"></div>
+    </div>
+    <div class="container" style="position:relative;z-index:3;width:100%;">
+      <p class="eyebrow mb-6 reveal">Studios Division</p>
+      <h1 class="display-xl reveal reveal-delay-1">Story-first production<br /><em style="color:var(--gold);font-style:italic;">built to move people.</em></h1>
+      <p class="body-lg mt-8 reveal reveal-delay-2" style="max-width:580px;">Cinematic work for brands, founders, campaigns, and organizations that need more than content — visuals with weight, rhythm, and intent.</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:40px;" class="reveal reveal-delay-3">
+        <a href="contact.html?division=studios" class="btn btn-primary">Start a Studios Project</a>
+        <a href="work.html" class="btn btn-outline">View Selected Work</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- STUDIOS VIDEO GRID -->
+  <section class="section-sm section-dark">
+    <div class="container">
+      <div class="video-grid-3">
+        <div class="reel-card">
+          <video src="videos/studio.mp4" muted loop playsinline preload="auto"></video>
+          <div class="reel-play"><button class="reel-play-btn" aria-label="Play"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button></div>
+          <div class="reel-card-overlay">
+            <span class="reel-label">Narrative Production</span>
+            <span class="reel-sublabel">Brand Films · Founder Stories · Campaigns</span>
+          </div>
+        </div>
+        <div class="reel-card">
+          <video src="videos/studio.mp4" muted loop playsinline preload="auto"></video>
+          <div class="reel-play"><button class="reel-play-btn" aria-label="Play"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button></div>
+          <div class="reel-card-overlay">
+            <span class="reel-label">Cinema Platform</span>
+            <span class="reel-sublabel">Sony FX6 · DJI Ronin 4D · G Master Glass</span>
+          </div>
+        </div>
+        <div class="reel-card">
+          <video src="videos/city.mp4" muted loop playsinline preload="auto"></video>
+          <div class="reel-play"><button class="reel-play-btn" aria-label="Play"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button></div>
+          <div class="reel-card-overlay">
+            <span class="reel-label">Post Production</span>
+            <span class="reel-sublabel">Color · Sound · Editorial · Delivery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- STUDIOS DEMO REEL -->
+  <section class="section section-mid">
+    <div class="container">
+      <div class="two-col-wide reveal">
+        <div>
+          <div class="video-player">
+          <video src="videos/studio.mp4" preload="metadata" playsinline></video>
+          <div class="play-overlay">
+            <button class="play-btn" aria-label="Play"><svg viewBox="0 0 24 24" width="28" height="28"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button>
+          </div>
+          <div class="video-label">Studios — Narrative Production Reel</div>
+        </div>
+          <p class="video-caption" style="margin-top:.75rem">Replace with your actual EFG Studios reel · Vimeo or direct MP4</p>
+        </div>
+        <div>
+          <p class="eyebrow mb-6">The Work</p>
+          <h2 class="display-md mb-8">Every project starts with the story. Not the camera.</h2>
+          <p class="body-md">Before a shot list is built or a lens is chosen, Studios defines what the work is actually trying to say — and why it will matter to the person watching it. That process is what separates production that performs from production that just exists.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section section-mid">
+    <div class="container">
+      <div class="two-col-wide">
+        <div class="reveal">
+          <div class="gold-line"></div>
+          <p class="eyebrow mb-6">The Division</p>
+          <h2 class="display-md mb-8">Where story becomes direction.</h2>
+          <p class="body-lg mb-6">Studios is the narrative engine inside Elevate Frame Group. This division exists for clients who need more than fast content and surface-level polish. We build visual work that carries structure, tone, and emotional clarity — whether the goal is a flagship brand film, a founder story, a campaign asset system, or a documentary-style piece that earns attention.</p>
+          <p class="body-md">Our process is disciplined from concept through delivery. We shape the message, define the visual language, execute with precision, and finish with editorial intent so the work holds up across web, events, presentations, social, and long-form use.</p>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="capability-strip" style="border:1px solid var(--black-border);background:var(--black-rich);">
+            <div style="padding:40px 32px;display:flex;flex-direction:column;gap:24px;">
+              <p class="eyebrow">At a Glance</p>
+              <div style="display:flex;flex-direction:column;gap:16px;">
+                <div style="border-bottom:1px solid var(--black-border);padding-bottom:16px;">
+                  <p class="label mb-4">Starting engagement</p>
+                  <p class="body-md text-white">$7,500 — $20,000+</p>
+                </div>
+                <div style="border-bottom:1px solid var(--black-border);padding-bottom:16px;">
+                  <p class="label mb-4">Typical timeline</p>
+                  <p class="body-md text-white">2 — 8 weeks</p>
+                </div>
+                <div style="border-bottom:1px solid var(--black-border);padding-bottom:16px;">
+                  <p class="label mb-4">Output</p>
+                  <p class="body-md text-white">Film, content system, or editorial asset package</p>
+                </div>
+                <div>
+                  <p class="label mb-4">Best for</p>
+                  <p class="body-md text-white">Brands, founders, campaigns, docs, institutions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="gold-line"></div>
+        <p class="eyebrow mb-6">What Studios Delivers</p>
+        <h2 class="display-md">A full-service narrative production division.</h2>
+      </div>
+      <div class="services-grid reveal">
+        <div class="service-item">
+          <span class="service-item-title">Brand Films</span>
+          <p class="service-item-body">Premium short films that communicate identity, trust, and value with cinematic clarity. Built for platforms, events, and lead-generation environments.</p>
+        </div>
+        <div class="service-item">
+          <span class="service-item-title">Founder Stories</span>
+          <p class="service-item-body">Narrative pieces built around leadership, origin, conviction, and vision — for founders who need their story to carry weight with clients and investors.</p>
+        </div>
+        <div class="service-item">
+          <span class="service-item-title">Campaign Production</span>
+          <p class="service-item-body">Hero content and supporting media for launches, recruitment, awareness, and conversion — structured for multi-channel use from day one.</p>
+        </div>
+        <div class="service-item">
+          <span class="service-item-title">Documentary &amp; Editorial</span>
+          <p class="service-item-body">Story-led content with depth, structure, and a more human pace — for clients who want something that earns attention rather than demands it.</p>
+        </div>
+        <div class="service-item">
+          <span class="service-item-title">Post-Production</span>
+          <p class="service-item-body">Editing, color, sound shaping, reframing, and finishing for internal or client-originated footage — with professional-grade precision throughout.</p>
+        </div>
+        <div class="service-item">
+          <span class="service-item-title">Content Systems</span>
+          <p class="service-item-body">A structured mix of hero, cutdown, and supporting assets designed for multi-channel deployment and long-form content strategy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POSITIONING -->
+  <section class="section section-mid">
+    <div class="container">
+      <div class="two-col">
+        <div class="reveal">
+          <div class="gold-line"></div>
+          <p class="eyebrow mb-6">Our Approach</p>
+          <h2 class="display-md mb-8">Not commodity content.<br />Structured visual language.</h2>
+          <p class="body-lg mb-6">Studios is built for clients who care about how their story is received. That means fewer throwaway assets, stronger message discipline, and a higher standard of execution. We do not approach production as a volume game. We approach it as an alignment exercise between narrative, aesthetics, and business purpose.</p>
+          <p class="body-md mb-8">When the work is right, it does more than look expensive. It becomes useful. It clarifies identity, supports trust, and gives people something worth remembering.</p>
+          <a href="contact.html?division=studios" class="btn btn-ghost">Start the Conversation</a>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div style="border:1px solid var(--black-border);background:var(--black-rich);">
+            <div style="padding:40px 32px;">
+              <p class="eyebrow mb-8">Ideal Clients</p>
+              <div style="display:flex;flex-direction:column;gap:14px;">
+                <div style="display:flex;align-items:center;gap:12px;">
+                  <span style="color:var(--gold);font-size:.7rem;">◆</span>
+                  <p class="body-md">Premium brands</p>
+                </div>
+                <div style="display:flex;align-items:center;gap:12px;">
+                  <span style="color:var(--gold);font-size:.7rem;">◆</span>
+                  <p class="body-md">Founder-led companies</p>
+                </div>
+                <div style="display:flex;align-items:center;gap:12px;">
+                  <span style="color:var(--gold);font-size:.7rem;">◆</span>
+                  <p class="body-md">Organizations with a story to explain</p>
+                </div>
+                <div style="display:flex;align-items:center;gap:12px;">
+                  <span style="color:var(--gold);font-size:.7rem;">◆</span>
+                  <p class="body-md">Recruitment and culture campaigns</p>
+                </div>
+                <div style="display:flex;align-items:center;gap:12px;">
+                  <span style="color:var(--gold);font-size:.7rem;">◆</span>
+                  <p class="body-md">Documentary-minded commercial work</p>
+                </div>
+                <div style="display:flex;align-items:center;gap:12px;">
+                  <span style="color:var(--gold);font-size:.7rem;">◆</span>
+                  <p class="body-md">Institutions seeking an elevated visual voice</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="gold-line"></div>
+        <p class="eyebrow mb-6">How We Work</p>
+        <h2 class="display-md">A disciplined production process from concept to delivery.</h2>
+      </div>
+      <div class="process-list reveal">
+        <div class="process-step">
+          <div class="process-number"><span>01</span></div>
+          <div class="process-content">
+            <span class="process-title">Discovery</span>
+            <p class="process-body">We identify the message, audience, objective, and emotional center of the piece — before a single frame is shot.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-number"><span>02</span></div>
+          <div class="process-content">
+            <span class="process-title">Strategy &amp; Concept</span>
+            <p class="process-body">We define treatment, visual direction, structure, and the production plan — so everything that follows is intentional.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-number"><span>03</span></div>
+          <div class="process-content">
+            <span class="process-title">Production</span>
+            <p class="process-body">We execute with a disciplined field workflow across camera, sound, lighting, movement, and coverage — precision from arrival to wrap.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-number"><span>04</span></div>
+          <div class="process-content">
+            <span class="process-title">Post</span>
+            <p class="process-body">We shape the final work through edit, pacing, sound, color, and delivery preparation — editorial intent applied at every stage.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-number"><span>05</span></div>
+          <div class="process-content">
+            <span class="process-title">Delivery</span>
+            <p class="process-body">We prepare final assets for campaign use, site placement, social cutdowns, internal use, or presentation environments — ready for deployment on day one.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="gold-line gold-line-center reveal"></div>
+      <p class="eyebrow mb-6 reveal">Studios</p>
+      <h2 class="display-md reveal reveal-delay-1">Build something worth watching.</h2>
+      <p class="body-md reveal reveal-delay-2">If your project needs more than content churn, Studios is the right starting point. We'll help shape the story, define the visual language, and execute the work with purpose.</p>
+      <div class="cta-actions reveal reveal-delay-3">
+        <a href="contact.html?division=studios" class="btn btn-primary">Start a Studios Project</a>
+        <a href="index.html" class="btn btn-outline">Back to EFG</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand" style="gap:12px;">
+            <svg width="32" height="32" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="19" cy="19" r="17.5" stroke="#c9a84c" stroke-width="0.75"/><circle cx="19" cy="19" r="5.5" stroke="#c9a84c" stroke-width="0.75"/><text x="12" y="22" font-family="serif" font-size="9" fill="#c9a84c" letter-spacing="0.5">EF</text></svg>
+            <div class="nav-wordmark"><span class="nav-wordmark-main">Elevate Frame</span><span class="nav-wordmark-sub">Group</span></div>
+          </a>
+          <p class="footer-brand-statement">A premium visual, aerial, and training group built to connect story, flight, and disciplined growth under one roof.</p>
+          <a href="contact.html?division=studios" class="btn btn-primary btn-sm" style="align-self:flex-start;">Start a Studios Project</a>
+        </div>
+        <div><p class="footer-col-title">Divisions</p><ul class="footer-links"><li><a href="studios.html">Studios</a></li><li><a href="air.html">Air</a></li><li><a href="academy.html">Academy</a></li></ul></div>
+        <div><p class="footer-col-title">Company</p><ul class="footer-links"><li><a href="work.html">Work</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><p class="footer-col-title">Contact</p><ul class="footer-links" style="gap:8px;"><li><a href="/cdn-cgi/l/email-protection#ed8588818182ad8881889b8c99888b9f8c80888a9f82989dc38e8280"><span class="__cf_email__" data-cfemail="553d3039393a1530393023342130332734383032273a20257b363a38">[email&#160;protected]</span></a></li><li><span style="color:var(--grey);font-size:.85rem;">Boynton Beach, Florida</span></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Elevate Frame Group. All rights reserved.</p>
+        <div class="foot
